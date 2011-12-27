@@ -9,6 +9,7 @@
 
 	
 int itev;
+int itev2;
 int ITre[100000];
 int ETre[100000];
 int STre[100000];
