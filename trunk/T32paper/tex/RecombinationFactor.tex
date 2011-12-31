@@ -1,0 +1,69 @@
+\subsection{Recombination Factor}
+%In this analysis, we use parameters of the Recombination factor in a measurement of Ref.\cite{658352}.
+ Electron-ion recombination depends on the electric field and stopping power $dE/dx$. We have studied this factor using tagged proton beam. Recombination factor measurement using proton beam is relatively easy because of stability of proton. This is why we used proton beam for this study as a first step.\\
+  Expression for recombination can be derived 
+
+\begin{equation}
+  Q = A\frac{Q_{0}}{1+(k/E)\times(dE/dx)\times(1/\rho)}
+\end{equation}
+
+where $Q_{0}$ is initial ionization charge, E is electric field, $dE/dx$ is energy deposit per distance, $\rho$ is density of liquid Argon, A and k are fit parameters. This formula can be rearranged like below:
+
+\begin{equation}
+  \frac{Q_{0}}{Q} = \frac{1}{A}+\frac{(k/E)(dE/dx)(1/\rho)}{A}
+\end{equation}
+
+The ratio of $Q_{0}/Q$ depends on stopping power $dE/dx$, so we determined fit parameter A and k using proton data and Monte Carlo simulation. In this analysis, we need $Q$, $Q_{0}$ and $dE/dx$ channel by channel. First, Electric Field E is fixed at 0.196 [kV/cm]. Second, $Q$ is integrated charge in an anode readout channel. we can get this value from Real DATA. Third, $Q_{0}$ is integrated charge without recombination factor in an anode readout channel. This value can be obtained using Qscan. And then, $dE/dx$ per an anode channel is determined with truth information of Qscan MC. Fig\ref{fadcDist1}, \ref{fadcDistMC}, \ref{fadcDistdEdx} shows $Q$, $Q_{0}$, $dEdx$ from stopped channel -1 to stopped channel -14. In many case, integrated charge in stopped channel are composed of cross talk. This is the reason why we don't use information from stopped channel in this analysis. 
+
+%ch by ch data distribution
+\begin{figure}[!htb]
+  \centering
+  \centering
+  \includegraphics[width=11cm,clip]{./fig/q.eps}
+%  \includegraphics[width=11cm,clip]{./fig/Data_FADCdistChbyCh.eps}
+  \caption{DATA:Integrated Flash ADC counts from stopped channel -1}
+  \label{fadcDist1}
+\end{figure}
+\pagebreak
+\pagebreak
+
+The result of this study is shown in Fig\ref{result}. Vertical axis is $Q_{0}/Q$, and horizontal axis is $dE/dx$ in this figure, this plot is fitted by Birk's low.
+As a result, we got fitting parameter\\
+\begin{eqnarray}
+%  \center
+ \nonumber  A =& 0.782\pm0.009\\
+   k =& 0.0467\pm0.0009 [kV(g/cm^{2})/cm/MeV]
+\end{eqnarray}
+
+We checked Birk's low in the range 4 $[MeV/(g/cm^2)]$ $\leqq dE/dx \leqq$ 12 $[MeV/cm^2]$ and the result is consistent with ICARUS experiment's one in -- sigma.
+
+%ch by ch MC distribution
+\begin{figure}[!htb]
+  \centering
+  \centering
+  \includegraphics[width=11cm,clip]{./fig/q_0.eps}
+%  \includegraphics[width=11cm,clip]{./fig/MC_FADCdistChbyCh.eps}
+%  \caption{MC:Distribution of Flash ADC counts ch by ch
+  \caption{MC without recombination:Integrated Flash ADC counts from stopped channel -1}
+  \label{fadcDistMC}
+\end{figure}
+
+%ch by ch dE/dx distribution
+\begin{figure}[!htb]
+  \centering
+  \centering
+  \includegraphics[width=11cm,clip]{./fig/dedx.eps}
+%  \caption{Distribution of dE/dx ch by ch}
+  \caption{dE/dx from stopped channel -1}
+  \label{fadcDistdEdx}
+\end{figure}
+
+%result
+\begin{figure}[!htb]
+  \centering
+  \centering
+  \includegraphics[width=11cm,clip]{./fig/result.eps}
+  \caption{1/RF VS dE/dx: fitted by Birk's low}
+  \label{result}
+\end{figure}
+
