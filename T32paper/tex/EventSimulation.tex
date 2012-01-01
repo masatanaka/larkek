@@ -3,18 +3,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Geant3, recombination, drift velocity}
 
-We use GEANT3 for simulating energy deposition of beam particles and
-their daughters. Readout pitch is 1 cm, 
+We use GEANT3 for simulating energy deposition of initial beam particles and
+secondary particles to LArTPC detector and beamline counters. 
 
 we set the maximum step of Geant to 0.5 mm
 which is enough smaller than the readout pitch of 1 cm.
-
 It means charge deposition in one strip is typically 
 simulated with 20 GEANT steps.
 
 We set energy cut-off for soft electron/photon emission to
 10 keV which is minimum possible energy can be set in GEANT3.
-This cut-off is very important for  ionization electron recombination.
+This cut-off is very important for ionization electron recombination.
 
 Recombination of electron and Argon ion depends on
 the electric field and $dE/dx$. We use a measurement in Ref.\cite{658352}.
@@ -24,17 +23,6 @@ Q = A \frac{Q_0}{1 + k dE/dx}, A = 0.800, k = 0.486
 
 Velocity of the drift electron depends on the liquid Argon temperature
 and the electric field. We use a measurement in Ref \cite{649233}.
-
-
-\begin{verbatim}
- *     Special TPAR for TMED   3   Liquid_argon                                                    *
- *  CUTGAM= 10.00 keV  CUTELE= 10.00 keV  CUTNEU= 10.00 MeV  CUTHAD= 10.00 MeV  CUTMUO= 10.00 MeV  *
- *  BCUTE = 10.00 keV  BCUTM = 10.00 keV  DCUTE = 10.00 keV  DCUTM = 10.00 keV  PPCUTM= 10.00 MeV  *
- *  IPAIR=  1.  ICOMP=  1.  IPHOT=  1.  IPFIS=  0.  IDRAY=  1.  IANNI=  1.  IBREM=  1.  IHADR=  4. *
- *  IMUNU=  1.  IDCAY=  1.  ILOSS=  1.  IMULS=  1.  IRAYL=  0.  ILABS=  0.  ISYNC=  0.  ISTRA=  0. *
-\end{verbatim}
-
-
 
 \begin{itemize}
 \item Plot: Geant Geometry, typical track (Tanaka)
@@ -49,9 +37,14 @@ We have calculated the electric field using a 2D FEM (Finite Element Method) pac
 This field map is used for simulating electron drift.
 
 
-\begin{itemize}
-\item Plot: 2D field map  (Tanaka)
-\end{itemize}
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/2DFieldMap.eps}
+ \end{center}
+ \caption{Electric field map obtained from 2D FEM calculation}
+ \label{Fig:2DFieldMap}
+\end{figure}
+
 
 \subsection{Drift Electron Diffusion}
 \begin{itemize}
@@ -69,7 +62,8 @@ This field map is used for simulating electron drift.
 \item Plot: simulated event  (Nagasaka)
 \end{itemize}
 
-\subsection{Cross Talk}
+%\subsection{Cross Talk}
+\input{tex/CrossTalk}
 \begin{itemize}
 \item Plot: signal waveform (proton stopped point + 1)  (A. Okamoto)
 \item Plot: simulated event with and without cross talk (A. Okamoto)
