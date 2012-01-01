@@ -1,4 +1,3 @@
-   \section{Beam Energy, Position}
    \subsection{Beam Energy}
  
    30GeV proton beam hits to target T1 in Hadron hall.
@@ -35,12 +34,45 @@ We adjust momentum peak of figure ?? and set Kaon beam energy  the point that th
 \end{figure}
 
    \subsubsection{Proton energy}\label{proton_energy_section}
-   asuka
 
+Beam momentum is ideally TOF information,
+but considered the dispersion, we should take into account of the resolution of TOF.
+As we know the resolution of TOF is $\sim$200ps beforehand,
+we can calculate the effect of this resolution to beam momentum.
+For example, as shows in table\ref{tb:TOF_expect}, 
+the time of flight of 800MeV/c $K^{+}$ between two TOF Counters is 13.71$ns$.
+When considering 0.2$ns$ TOF resolution for this value,
+the momentum is approximately 760$\sim$845MeV/c spreading largely.
+However, taking the same calculation for 800MeV/c $p$,
+the momentum is approximately 785$\sim$815MeV/c surpressing the dispersion to some extent.
+In addition, because the dispersion of Time of Flight of $p$ appears widespread over TOF resolution,
+we estimate the momentum of $p$ from TOF information.\\
+Figure\ref{fig:Proton_tof} shows responce of TOF Counters of PhysicsOct49 whose data include many $p$ events.
+As discribed above, the holizontal axis don't show the real time of flight.
+Then, with PhysicsOct47 whose data include much $e^{+}$ events, we determined the mean of $e^{+}$.
+As the $beta$ of $e^{+}$ is $\sim$1.0, this value of horizontal axis correspond 11.67$ns$(dotted line in Fig\ref{fig:Proton_tof}).
+Figure\ref{fig:Proton_momentum} shows the estimated momentum histgram from figure\ref{fig:Proton_tof}
+and this momentum distribution is implemented to Monte Carlo Simulation.
+Whether the distribution reproduce DATA well is discussed in section 7.2.
 
+\begin{figure}[htbp]
+  \begin{tabular}{cc}
+    \begin{minipage}{0.5\hsize}
+      \centering
+      \includegraphics[width=6cm,clip]{fig/TOF_proton.eps}
+      \caption{$p$ TOF response}
+      \label{fig:Proton_tof}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
+      \centering
+      \includegraphics[width=6cm,clip]{fig/Momentum_proton.eps}
+      \caption{Estimated $p$ momentum}
+      \label{fig:Proton_momentum}
+    \end{minipage}
+  \end{tabular}
+\end{figure} 
 
-
-   \subsection{Energy deposition in degrader}
+   \subsubsection{Energy deposition in degrader}
    Because of having high energy, kaon beam from BDC passes through 250LAr TPC.
    So that kaon stops in 250LAr TPC, we put degrader, which reduce
    beam energy, on beam line.
