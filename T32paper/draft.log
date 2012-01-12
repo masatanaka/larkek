@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  12 JAN 2012 13:31
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  12 JAN 2012 14:54
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -274,17 +274,17 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 14--43
 []$[]$ $[]$ 
  []
 
-[20]
 File: fig/hmap_kink_chi2.eps Graphic file (type eps)
- <fig/hmap_kink_chi2.eps>
+<fig/hmap_kink_chi2.eps>
 File: fig/chi2_kink_chi2.eps Graphic file (type eps)
  <fig/chi2_kink_chi2.eps>
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 59--73
 []$[]$ $[]$ 
  []
 
+[20] [21]
 File: fig/hmap_kink_BS.eps Graphic file (type eps)
-<fig/hmap_kink_BS.eps>)) [21] [22]
+ <fig/hmap_kink_BS.eps>)) [22]
 \openout2 = `tex/LiquidArgonPurity.aux'.
 
  (./tex/LiquidArgonPurity.tex
@@ -419,4 +419,4 @@ Here is how much of TeX's memory you used:
  566 hyphenation exceptions out of 8191
  32i,10n,30p,978b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (42 pages, 55588 bytes).
+Output written on draft.dvi (42 pages, 56236 bytes).
