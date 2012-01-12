@@ -1,13 +1,13 @@
-This is pTeX, Version 3.141592-p3.1.11 (utf8.euc) (Web2C 7.5.4) (format=platex 2011.7.24)  5 JAN 2012 15:45
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  12 JAN 2012 13:31
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
 (./elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
 \@bls=\dimen118
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/article.cls
+(/usr/local/teTeX/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/teTeX/share/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count81
@@ -22,43 +22,43 @@ File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen119
 )
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/Applications/UpTeX.app/teTeX/share/texmf/tex/latex/graphics/dvipdfmx-contrib-
-latex/graphics.sty
+(/usr/local/teTeX/share/texmf/tex/latex/graphics/dvipdfmx-contrib-latex/graphic
+s.sty
 Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
-
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/graphics.cfg
+(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/graphics.cfg
 File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: dvips.def on input line 81.
- (/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/dvips.def
+
+(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
-) (/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/pifont.sty
+)
+(/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2004/09/15 PSNFSS-v9.2 Pi font support (SPQR) 
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
-
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/upzd.fd
+ (/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
-
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/upsy.fd
+ (/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count89
@@ -79,8 +79,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(./draft.spl)
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/natbib/natbib.sty
+(./draft.spl) (/usr/local/teTeX/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2003/06/06 7.1 (PWD)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -92,17 +91,18 @@ LaTeX Info: Redefining \cite on input line 518.
 
 \appnamewidth=\dimen125
 )
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
-)) (./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
+))
+(./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
 (./tex/SoftwareFramework.aux) (./tex/EventReconstruction.aux
 
 LaTeX Warning: Label `Fig:beforeFFT' multiply defined.
@@ -133,12 +133,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 119.
 LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 
@@ -176,38 +176,33 @@ File: fig/Beamline.eps Graphic file (type eps)
 <fig/Beamline.eps> [5]
 File: fig/FC_KPI.eps Graphic file (type eps)
  <fig/FC_KPI.eps> [6]
-File: fig/TOF.eps Graphic file (type eps)
- <fig/TOF.eps> [7]
 File: fig/GC.eps Graphic file (type eps)
- <fig/GC.eps>)
-Overfull \hbox (4.35576pt too wide) in paragraph at lines 111--95
-[]\OT1/cmr/m/n/12 PhysicsOct52,55,59,60 is the data which was re-quired `FC sig
-nal($\OML/cmm/m/it/12 K$\OT1/cmr/m/n/12 )$\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 20
-00`
- []
+ <fig/GC.eps> [7]
+File: fig/TOF.eps Graphic file (type eps)
+ <fig/TOF.eps>
+File: fig/TOF_cut.eps Graphic file (type eps)
 
-[8] (./tex/beamenergy.tex
+<fig/TOF_cut.eps>) (./tex/beamenergy.tex [8] [9]
 File: fig/cdp_hough.eps Graphic file (type eps)
- <fig/cdp_hough.eps> [9]
+ <fig/cdp_hough.eps> [10]
 File: fig/TOF_proton.eps Graphic file (type eps)
- <fig/TOF_proton.eps>
-File: fig/Momentum_proton.eps Graphic file (type eps)
 
-<fig/Momentum_proton.eps>
-Overfull \hbox (15.91663pt too wide) in paragraph at lines 59--73
+<fig/TOF_proton.eps>
+File: fig/Momentum_proton.eps Graphic file (type eps)
+ <fig/Momentum_proton.eps>
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 49--63
 [][] 
  []
 
-[10]
 File: ./fig/K11Br_beamline_sim.eps Graphic file (type eps)
- <./fig/K11Br_beamline_sim.eps>
+<./fig/K11Br_beamline_sim.eps>
 File: ./fig/Kaon_pion_momentum_nogrid.eps Graphic file (type eps)
  <./fig/Kaon_pion_momentum_nogrid.eps>
 File: ./fig/energy_deposition.eps Graphic file (type eps)
 
 <./fig/energy_deposition.eps>
 File: ./fig/BeamProfile3.eps Graphic file (type eps)
- <./fig/BeamProfile3.eps>)) [11] [12]
+ <./fig/BeamProfile3.eps>)) [11] [12] [13]
 \openout2 = `tex/SoftwareFramework.aux'.
 
 
@@ -218,7 +213,7 @@ al-y-sis(reference)
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/teTeX/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -229,7 +224,7 @@ Overfull \hbox (0.2265pt too wide) in paragraph at lines 9--10
 on-structed quan-
  []
 
-) [13
+) [14
 
 
 ]
@@ -237,7 +232,7 @@ on-structed quan-
 
  (./tex/EventReconstruction.tex
 
-LaTeX Warning: Reference `Fig:FFT' on page 14 undefined on input line 16.
+LaTeX Warning: Reference `Fig:FFT' on page 15 undefined on input line 16.
 
 File: fig/beforeFFT.eps Graphic file (type eps)
 <fig/beforeFFT.eps>
@@ -245,10 +240,10 @@ File: fig/FFT.eps Graphic file (type eps)
  <fig/FFT.eps>
 File: fig/afterFFT.eps Graphic file (type eps)
  <fig/afterFFT.eps> (./tex/hitclustering.tex
-[14
+[15
 
 
-] [15]
+] [16]
 File: fig/clustering.eps Graphic file (type eps)
  <fig/clustering.eps>)
 File: fig/PionTrack.eps Graphic file (type eps)
@@ -257,10 +252,10 @@ File: fig/PionQvsCh.eps Graphic file (type eps)
  <fig/PionQvsCh.eps>
 File: fig/PionQcvsCh.eps Graphic file (type eps)
 
-<fig/PionQcvsCh.eps> (./tex/StoppedProton.tex [16] [17]
+<fig/PionQcvsCh.eps> (./tex/StoppedProton.tex [17] [18]
 File: ./fig/Display_run440_ev21.eps Graphic file (type eps)
 
-<./fig/Display_run440_ev21.eps>) (./tex/StoppedKaon.tex [18]
+<./fig/Display_run440_ev21.eps>) (./tex/StoppedKaon.tex [19]
 File: fig/hmap2.eps Graphic file (type eps)
  <fig/hmap2.eps>
 File: fig/rho_theta2.eps Graphic file (type eps)
@@ -279,7 +274,7 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 14--43
 []$[]$ $[]$ 
  []
 
-[19]
+[20]
 File: fig/hmap_kink_chi2.eps Graphic file (type eps)
  <fig/hmap_kink_chi2.eps>
 File: fig/chi2_kink_chi2.eps Graphic file (type eps)
@@ -289,12 +284,12 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 59--73
  []
 
 File: fig/hmap_kink_BS.eps Graphic file (type eps)
-<fig/hmap_kink_BS.eps>)) [20] [21]
+<fig/hmap_kink_BS.eps>)) [21] [22]
 \openout2 = `tex/LiquidArgonPurity.aux'.
 
  (./tex/LiquidArgonPurity.tex
 
-LaTeX Warning: Reference `sec:Efield' on page 22 undefined on input line 10.
+LaTeX Warning: Reference `sec:Efield' on page 23 undefined on input line 10.
 
 File: fig/cosmic68_ev258_display.eps Graphic file (type eps)
 <fig/cosmic68_ev258_display.eps>
@@ -304,17 +299,17 @@ File: fig/chargeDep.eps Graphic file (type eps)
  <fig/chargeDep.eps>
 File: fig/tauExample.eps Graphic file (type eps)
 
-<fig/tauExample.eps> [22
+<fig/tauExample.eps> [23
 
 
 ]
 File: fig/tauHistory.eps Graphic file (type eps)
- <fig/tauHistory.eps>) [23]
+ <fig/tauHistory.eps>) [24]
 \openout2 = `tex/EventSimulation.aux'.
 
  (./tex/EventSimulation.tex
 
-Package natbib Warning: Citation `Ref:FEMTET' on page 24 undefined on input lin
+Package natbib Warning: Citation `Ref:FEMTET' on page 25 undefined on input lin
 e 35.
 
 File: fig/2DFieldMap.eps Graphic file (type eps)
@@ -323,7 +318,7 @@ File: ./fig/example10ch.eps Graphic file (type eps)
  <./fig/example10ch.eps>
 File: ./fig/cos.eps Graphic file (type eps)
 
-<./fig/cos.eps> [24
+<./fig/cos.eps> [25
 
 
 ]
@@ -333,14 +328,14 @@ File: ./fig/coherentNoise.eps Graphic file (type eps)
  <./fig/coherentNoise.eps>
 File: ./fig/scaling.eps Graphic file (type eps)
 
-<./fig/scaling.eps> [25]) (./tex/CrossTalk.tex [26] [27]
+<./fig/scaling.eps> [26]) (./tex/CrossTalk.tex [27] [28]
 File: fig/cross_talk.eps Graphic file (type eps)
- <fig/cross_talk.eps>)) [28] [29] [30]
+ <fig/cross_talk.eps>)) [29] [30] [31]
 \openout2 = `tex/Data-MCComparison.aux'.
 
  (./tex/Data-MCComparison.tex (./tex/StoppedProton2.tex
 
-LaTeX Warning: Reference `fig:various_distibution' on page 31 undefined on inpu
+LaTeX Warning: Reference `fig:various_distibution' on page 32 undefined on inpu
 t line 6.
 
 File: ./fig/stop_proton_1.eps Graphic file (type eps)
@@ -349,19 +344,19 @@ File: fig/stop_proton.eps Graphic file (type eps)
  <fig/stop_proton.eps>
 File: fig/stop_proton_3.eps Graphic file (type eps)
  <fig/stop_proton_3.eps>)
-(./tex/RecombinationFactor.tex [31
+(./tex/RecombinationFactor.tex [32
 
 
-] [32]
+] [33]
 File: ./fig/q.eps Graphic file (type eps)
- <./fig/q.eps> [33]
+ <./fig/q.eps> [34]
 File: ./fig/q_0.eps Graphic file (type eps)
  <./fig/q_0.eps>
 File: ./fig/dedx.eps Graphic file (type eps)
 
 <./fig/dedx.eps>
 File: ./fig/result.eps Graphic file (type eps)
- <./fig/result.eps>) (./tex/StoppedKaon2.tex [34]
+ <./fig/result.eps>) (./tex/StoppedKaon2.tex [35]
 File: fig/cHitq_hough.eps Graphic file (type eps)
 
 <fig/cHitq_hough.eps>
@@ -381,11 +376,11 @@ File: fig/RangeVsHitfabs_wcut_hough_ver2.eps Graphic file (type eps)
 <fig/RangeVsHitfabs_wcut_hough_ver2.eps>
 File: fig/RangeVsHitRatio_wcut_hough_ver2.eps Graphic file (type eps)
 
-<fig/RangeVsHitRatio_wcut_hough_ver2.eps>)) [35] [36] [37] [38] [39]
+<fig/RangeVsHitRatio_wcut_hough_ver2.eps>)) [36] [37] [38] [39] [40]
 \openout2 = `tex/Summary.aux'.
 
 
-(./tex/Summary.tex) [40
+(./tex/Summary.tex) [41
 
 
 ]
@@ -399,7 +394,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 247--248
 
 Package natbib Warning: There were undefined citations.
 
-[41
+[42
 
 ] (./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
 (./tex/SoftwareFramework.aux) (./tex/EventReconstruction.aux)
@@ -416,12 +411,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1655 strings out of 94681
- 21105 string characters out of 1174371
- 73130 words of memory out of 1500000
- 4781 multiletter control sequences out of 10000+50000
+ 1658 strings out of 94681
+ 20637 string characters out of 1176814
+ 73141 words of memory out of 1500000
+ 4783 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,10n,30p,978b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (41 pages, 56112 bytes).
+Output written on draft.dvi (42 pages, 55588 bytes).

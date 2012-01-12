@@ -35,25 +35,15 @@ We adjust momentum peak of figure ?? and set Kaon beam energy  the point that th
 
    \subsubsection{Proton energy}\label{proton_energy_section}
 
-Beam momentum is ideally TOF information,
-but considered the dispersion, we should take into account of the resolution of TOF.
-As we know the resolution of TOF is $\sim$200ps beforehand,
-we can calculate the effect of this resolution to beam momentum.
-For example, as shows in table\ref{tb:TOF_expect}, 
-the time of flight of 800MeV/c $K^{+}$ between two TOF Counters is 13.71$ns$.
-When considering 0.2$ns$ TOF resolution for this value,
-the momentum is approximately 760$\sim$845MeV/c spreading largely.
-However, taking the same calculation for 800MeV/c $p$,
-the momentum is approximately 785$\sim$815MeV/c surpressing the dispersion to some extent.
-In addition, because the dispersion of Time of Flight of $p$ appears widespread over TOF resolution,
-we estimate the momentum of $p$ from TOF information.\\
-Figure\ref{fig:Proton_tof} shows responce of TOF Counters of PhysicsOct49 whose data include many $p$ events.
-As discribed above, the holizontal axis don't show the real time of flight.
-Then, with PhysicsOct47 whose data include much $e^{+}$ events, we determined the mean of $e^{+}$.
-As the $beta$ of $e^{+}$ is $\sim$1.0, this value of horizontal axis correspond 11.67$ns$(dotted line in Fig\ref{fig:Proton_tof}).
-Figure\ref{fig:Proton_momentum} shows the estimated momentum histgram from figure\ref{fig:Proton_tof}
-and this momentum distribution is implemented to Monte Carlo Simulation.
-Whether the distribution reproduce DATA well is discussed in section 7.2.
+Figure\ref{fig:Proton_tof} shows responce of the TOF Counters of selected Proton of Run 49 which includes many proton events.
+Compared the value of 17.98ns of table\ref{tb:TOF_expect},
+protons are distributed where is much smaller than this value.
+This result indicates beam momentum of protons are smaller than $\sim$800MeV.
+Futhermore, the dispersion of time of flight of protons is very differnt from the other particles.
+Based on these fact, the momentum of Proton which implement in simulation
+is estimated by TOF information.
+Figure\ref{fig:Proton_momentum} shows the estimated momentum from time of flight between two TOF Counters.
+Whether the distribution reproduce real momentum well is discussed in section 7.2.\\
 
 \begin{figure}[htbp]
   \begin{tabular}{cc}
