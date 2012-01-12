@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  12 JAN 2012 14:54
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  12 JAN 2012 17:20
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -328,9 +328,23 @@ File: ./fig/coherentNoise.eps Graphic file (type eps)
  <./fig/coherentNoise.eps>
 File: ./fig/scaling.eps Graphic file (type eps)
 
-<./fig/scaling.eps> [26]) (./tex/CrossTalk.tex [27] [28]
-File: fig/cross_talk.eps Graphic file (type eps)
- <fig/cross_talk.eps>)) [29] [30] [31]
+<./fig/scaling.eps> [26]) (./tex/CrossTalk.tex
+
+LaTeX Warning: Reference `cross_talk1' on page 27 undefined on input line 7.
+
+
+LaTeX Warning: Reference `cross_talk2' on page 27 undefined on input line 15.
+
+[27] [28]
+File: fig/cross_talk_1.eps Graphic file (type eps)
+ <fig/cross_talk_1.eps>
+File: fig/cross_talk_2.eps Graphic file (type eps)
+ <fig/cross_talk_2.eps>
+Overfull \hbox (15.91663pt too wide) in paragraph at lines 21--35
+[][] 
+ []
+
+)) [29] [30] [31]
 \openout2 = `tex/Data-MCComparison.aux'.
 
  (./tex/Data-MCComparison.tex (./tex/StoppedProton2.tex
@@ -338,12 +352,12 @@ File: fig/cross_talk.eps Graphic file (type eps)
 LaTeX Warning: Reference `fig:various_distibution' on page 32 undefined on inpu
 t line 6.
 
-File: ./fig/stop_proton_1.eps Graphic file (type eps)
-<./fig/stop_proton_1.eps>
-File: fig/stop_proton.eps Graphic file (type eps)
- <fig/stop_proton.eps>
-File: fig/stop_proton_3.eps Graphic file (type eps)
- <fig/stop_proton_3.eps>)
+File: ./fig/stop_proton1.eps Graphic file (type eps)
+<./fig/stop_proton1.eps>
+File: fig/stop_proton2.eps Graphic file (type eps)
+ <fig/stop_proton2.eps>
+File: fig/stop_proton3.eps Graphic file (type eps)
+ <fig/stop_proton3.eps>)
 (./tex/RecombinationFactor.tex [32
 
 
@@ -411,12 +425,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1658 strings out of 94681
- 20637 string characters out of 1176814
- 73141 words of memory out of 1500000
- 4783 multiletter control sequences out of 10000+50000
+ 1663 strings out of 94681
+ 20723 string characters out of 1176814
+ 73151 words of memory out of 1500000
+ 4787 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,10n,30p,978b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (42 pages, 56236 bytes).
+Output written on draft.dvi (42 pages, 56200 bytes).
