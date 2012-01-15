@@ -27,8 +27,8 @@
 \\
 After performing inverse FFT, there is random noise (Fig\ref{randomNoise})which have the same distribution of frequency as real data. Real DATA have coherent noise but random noise don't have coherent components, therefore adding coherent components is necessary to reproduce realistic noise.\\
 \\
-3. Select random noise 0 and 31 and 63ch\\
-4. Insert random noise 0 ch to 1-30ch, 31ch to 32-62ch, 63ch to 64-75ch\\
+3. Select random noise 0 and 32 and 64ch\\
+4. Insert random noise 0 ch to 1-31ch, 32ch to 33-63ch, 64ch to 65-75ch\\
 5. Scaling each channel \\
 \\
 Real DATA look having coherent noise board by board(We used 3 readout board in T32 experiment). We chosen 3 random noise(0ch,31ch,63ch) in this reason. After that, each channel needs to be corrected as each noise scale. Fig\ref{coherentNoise} shows coherent noise after scaling as Fig\ref{scaling}. Vertical axis of Fig\ref{scaling} is RMS of FADC, it stands for noise level.\\
@@ -58,5 +58,5 @@ Real DATA look having coherent noise board by board(We used 3 readout board in T
 \\
 Finaly, We mixed Random noise and coherent noise as \\
 \begin{equation}
-  RealisiticNoise = RandomNoise + CoherentNoise*0.5
+  Realisitic\,Noise = \frac{Random\,Noise + Coherent\,Noise}{2}
 \end{equation}
