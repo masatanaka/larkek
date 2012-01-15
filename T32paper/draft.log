@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  14 JAN 2012 16:02
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  16 JAN 2012 06:49
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -433,4 +433,4 @@ Here is how much of TeX's memory you used:
  566 hyphenation exceptions out of 8191
  32i,10n,30p,978b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (42 pages, 56200 bytes).
+Output written on draft.dvi (42 pages, 56248 bytes).
