@@ -17,9 +17,9 @@ The vertical axis shows that of 800MeV/c $K$.
 Signals are distinctly seperated to three cluster and can be categolized as following.\\
 
 \begin{enumerate}
-\item FC Signal($\pi$)$<$1450 \& FC Signal($K$)$>$2000 \\
-\item FC Signal($\pi$)$<$1450 \& FC Signal($K$)$<$2000 \\
-\item FC Signal($\pi$)$>$1450 \& FC Signal($K$)$<$2000 \\
+\item FC($\pi$) Signal$<$1450 \& FC($K$) Signal$>$2000 \\
+\item FC($\pi$) Signal$<$1450 \& FC($K$) Signal$<$2000 \\
+\item FC($\pi$) Signal$>$1450 \& FC($K$) Signal$<$2000 \\
 \end{enumerate}
 
 Appearently, particles within the region 1 are $K^{+}$ candidates.
@@ -81,7 +81,7 @@ The cut value to separete the first strucuture and the second structure is $\sim
 
 $K^{+}$ can selected very efficiently with Fitch Cherenkov Counter,
 so we require the condition FC Signal($K$) is more than 2000
-to get the date of $K$ in taking data.
+to get $K^{+}$ events in taking data.
 Figure\ref{fig:TOF_cut} shows responce of the TOF Counters before and after above cut.
 The histgram which filled with black is what is after cut.
 This figure shows we can get high-purity $K^{+}$ samples with this condition.
@@ -89,7 +89,7 @@ This figure shows we can get high-purity $K^{+}$ samples with this condition.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=10cm,clip]{fig/TOF_cut.eps}
-  \caption{TOF Counter}
+  \caption{TOF Counter after $K^{+}$ selection}
   \label{fig:TOF_cut}
 \end{figure}
 
@@ -104,14 +104,15 @@ Table\ref{tb:component} shows the beam components of the data used for analysis.
     42            & 68      & 1617      & 27      & 232   & 5           & 1949             \\
     48            & 128     & 1594      & 78      & 126   & 11          & 1937             \\
     49            & 0       & 341       & 0       & 1146  & 12          & 1499             \\
-    52            & 0       & 1         & 3126    & 0     & 76          & 3203             \\
-    55            & 0       & 6         & 8386    & 0     & 208         & 8600             \\
-    59            & 0       & 8         & 5863    & 0     & 119         & 5963             \\
-    60            & 0       & 1         & 1870    & 0     & 40          & 1911             \\ \hline
+    52            & 0       & 0         & 3169    & 0     & 34          & 3203             \\
+    55            & 0       & 0         & 8534    & 0     & 66          & 8600             \\
+    59            & 0       & 0         & 5900    & 0     & 50          & 5950             \\
+    60            & 0       & 0         & 1899    & 0     & 13          & 1912             \\ \hline
   \end{tabular}
   \label{tb:component}
   \caption{Beam components of data ued for analysis}
 \end{table}
 
-Run 52,55,59 and 60 are the data required the condition FC Signal($K$) is more than 2000 in taking data.
-As table\ref{tb:component} shows, these data is almost occupied $K^{+}$ events and the ratio is $\sim$98\% on average.
+Run 52,55,59 and 60 are the data required the condition FC Signal($K$) is more than 2000 in taking data to get $K^{+}$ events.
+Therefore the selection of $K^{+}$ on the analysis required by only TOF, that is, time of flight is 12.72$\sim$17.72ns, and the others are defined $uncertain$.
+As table\ref{tb:component} shows, these data is almost occupied $K^{+}$ events and the ratio is $\sim$99.2\% on average.
