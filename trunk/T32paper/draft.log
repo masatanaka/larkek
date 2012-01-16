@@ -253,9 +253,9 @@ File: fig/PionQvsCh.eps Graphic file (type eps)
 File: fig/PionQcvsCh.eps Graphic file (type eps)
 
 <fig/PionQcvsCh.eps> (./tex/StoppedProton.tex [17] [18]
-File: ./fig/Display_run440_ev21.eps Graphic file (type eps)
+File: fig/Display_run440_ev21.eps Graphic file (type eps)
 
-<./fig/Display_run440_ev21.eps>) (./tex/StoppedKaon.tex [19]
+<fig/Display_run440_ev21.eps>) (./tex/StoppedKaon.tex
 File: fig/hmap2.eps Graphic file (type eps)
  <fig/hmap2.eps>
 File: fig/rho_theta2.eps Graphic file (type eps)
@@ -274,17 +274,18 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 14--43
 []$[]$ $[]$ 
  []
 
+[19]
 File: fig/hmap_kink_chi2.eps Graphic file (type eps)
-<fig/hmap_kink_chi2.eps>
+ <fig/hmap_kink_chi2.eps>
 File: fig/chi2_kink_chi2.eps Graphic file (type eps)
  <fig/chi2_kink_chi2.eps>
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 59--73
 []$[]$ $[]$ 
  []
 
-[20] [21]
+[20]
 File: fig/hmap_kink_BS.eps Graphic file (type eps)
- <fig/hmap_kink_BS.eps>)) [22]
+ <fig/hmap_kink_BS.eps>)) [21] [22]
 \openout2 = `tex/LiquidArgonPurity.aux'.
 
  (./tex/LiquidArgonPurity.tex
@@ -328,16 +329,10 @@ File: ./fig/coherentNoise.eps Graphic file (type eps)
  <./fig/coherentNoise.eps>
 File: ./fig/scaling.eps Graphic file (type eps)
 
-<./fig/scaling.eps> [26]) (./tex/CrossTalk.tex
-
-LaTeX Warning: Reference `cross_talk1' on page 27 undefined on input line 7.
-
-
-LaTeX Warning: Reference `cross_talk2' on page 27 undefined on input line 15.
-
-[27] [28]
+<./fig/scaling.eps> [26]) (./tex/CrossTalk.tex [27] [28]
 File: fig/cross_talk_1.eps Graphic file (type eps)
- <fig/cross_talk_1.eps>
+
+<fig/cross_talk_1.eps>
 File: fig/cross_talk_2.eps Graphic file (type eps)
  <fig/cross_talk_2.eps>
 Overfull \hbox (15.91663pt too wide) in paragraph at lines 21--35
@@ -349,52 +344,52 @@ Overfull \hbox (15.91663pt too wide) in paragraph at lines 21--35
 
  (./tex/Data-MCComparison.tex (./tex/StoppedProton2.tex
 
-LaTeX Warning: Reference `fig:various_distibution' on page 32 undefined on inpu
-t line 6.
+LaTeX Warning: Reference `fig:various_distribution' on page 32 undefined on inp
+ut line 20.
 
 File: ./fig/stop_proton1.eps Graphic file (type eps)
-<./fig/stop_proton1.eps>
-File: fig/stop_proton2.eps Graphic file (type eps)
- <fig/stop_proton2.eps>
-File: fig/stop_proton3.eps Graphic file (type eps)
- <fig/stop_proton3.eps>)
-(./tex/RecombinationFactor.tex [32
+<./fig/stop_proton1.eps> [32
 
 
 ] [33]
+File: fig/stop_proton2.eps Graphic file (type eps)
+ <fig/stop_proton2.eps>
+File: fig/stop_proton3.eps Graphic file (type eps)
+
+<fig/stop_proton3.eps>) (./tex/RecombinationFactor.tex [34]
 File: ./fig/q.eps Graphic file (type eps)
- <./fig/q.eps> [34]
+ <./fig/q.eps>
+[35]
 File: ./fig/q_0.eps Graphic file (type eps)
  <./fig/q_0.eps>
 File: ./fig/dedx.eps Graphic file (type eps)
-
-<./fig/dedx.eps>
+ <./fig/dedx.eps>
 File: ./fig/result.eps Graphic file (type eps)
- <./fig/result.eps>) (./tex/StoppedKaon2.tex [35]
+ <./fig/result.eps>)
+(./tex/StoppedKaon2.tex [36]
 File: fig/cHitq_hough.eps Graphic file (type eps)
-
-<fig/cHitq_hough.eps>
+ <fig/cHitq_hough.eps>
 File: fig/cHitSigma_hough.eps Graphic file (type eps)
  <fig/cHitSigma_hough.eps>
 File: fig/cClusterCharge_hough.eps Graphic file (type eps)
- <fig/cClusterCharge_hough.eps>
-File: fig/cCSTSP_hough.eps Graphic file (type eps)
 
-<fig/cCSTSP_hough.eps>
+<fig/cClusterCharge_hough.eps>
+File: fig/cCSTSP_hough.eps Graphic file (type eps)
+ <fig/cCSTSP_hough.eps>
 File: fig/cq27_hough.eps Graphic file (type eps)
  <fig/cq27_hough.eps>
 File: fig/RangeVsHit4_wcut_hough.eps Graphic file (type eps)
- <fig/RangeVsHit4_wcut_hough.eps>
-File: fig/RangeVsHitfabs_wcut_hough_ver2.eps Graphic file (type eps)
 
-<fig/RangeVsHitfabs_wcut_hough_ver2.eps>
+<fig/RangeVsHit4_wcut_hough.eps>
+File: fig/RangeVsHitfabs_wcut_hough_ver2.eps Graphic file (type eps)
+ <fig/RangeVsHitfabs_wcut_hough_ver2.eps>
 File: fig/RangeVsHitRatio_wcut_hough_ver2.eps Graphic file (type eps)
 
-<fig/RangeVsHitRatio_wcut_hough_ver2.eps>)) [36] [37] [38] [39] [40]
+<fig/RangeVsHitRatio_wcut_hough_ver2.eps>)) [37] [38] [39] [40] [41]
 \openout2 = `tex/Summary.aux'.
 
 
-(./tex/Summary.tex) [41
+(./tex/Summary.tex) [42
 
 
 ]
@@ -408,7 +403,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 247--248
 
 Package natbib Warning: There were undefined citations.
 
-[42
+[43
 
 ] (./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
 (./tex/SoftwareFramework.aux) (./tex/EventReconstruction.aux)
@@ -425,10 +420,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1663 strings out of 94681
- 20723 string characters out of 1176814
- 73151 words of memory out of 1500000
- 4787 multiletter control sequences out of 10000+50000
+ 1662 strings out of 94681
+ 20732 string characters out of 1176814
+ 73162 words of memory out of 1500000
+ 4786 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,10n,30p,978b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
