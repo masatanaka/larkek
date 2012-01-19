@@ -1,6 +1,6 @@
 \subsection{Beam Quality(Purity)}
 
-We have several beam counters to indentify beam particles event by event(see Fig\ref{fig:Beamline}).Using this when taking data, we can get data of interest selectively.The following describe how to identify beam particles with the typical data including $K^{+}$, $\pi~{+}$, $e^{+}$, $p$ events, which have the momentum adjusted $\sim$800MeV/c.\\
+We have several beam counters to identify beam particles event by event(see Fig\ref{fig:Beamline}).Using this when taking data, we can get data of interest selectively.The following describe how to identify beam particles with the typical data including $K^{+}$, $\pi~{+}$, $e^{+}$, $p$ events, which have the momentum adjusted $\sim$800MeV/c.\\
 
 \begin{figure}[htbp]
   \centering
@@ -9,12 +9,12 @@ We have several beam counters to indentify beam particles event by event(see Fig
   \label{fig:Beamline}
 \end{figure}
 
-Leaded particles to K1.1BR beamline pass the Fitch Cheernkov Counter at first.
-Fitch Cherenkov Counter can select particles with diffrerences of angle of cherenkov light which they radiate.
-Fifure\ref{fig:FC_KPI} shows the respose of the Fitch Cherenkov Counter.
+Leaded particles to K1.1BR beam line pass the Fitch Cherenkov Counter at first.
+Fitch Cherenkov Counter can select particles with differences of angle of cherenkov light which they radiate.
+Figure\ref{fig:FC_KPI} shows the response of the Fitch Cherenkov Counter.
 The horizontal axis shows the total amount of PMT signal where cherenkov light of 800MeV/c $\pi$ can be detected.
 The vertical axis shows that of 800MeV/c $K$.
-Signals are distinctly seperated to three cluster and can be categolized as following.\\
+Signals are distinctly separated to three cluster and can be categorized as following.\\
 
 \begin{enumerate}
 \item FC($\pi$) Signal$<$1450 \& FC($K$) Signal$>$2000 \\
@@ -22,7 +22,7 @@ Signals are distinctly seperated to three cluster and can be categolized as foll
 \item FC($\pi$) Signal$>$1450 \& FC($K$) Signal$<$2000 \\
 \end{enumerate}
 
-Appearently, particles within the region 1 are $K^{+}$ candidates.
+Apparently, particles within the region 1 are $K^{+}$ candidates.
 Particles within region 2 are $p$ candidates because 800MeV/c $p$ is impossible to radiate cherenkov light.
 Particles within region 3 are $\pi^{+}$ or $e^{+}$ candidates because their angle of cherenkov light are almost same level.\\
 
@@ -34,10 +34,10 @@ Particles within region 3 are $\pi^{+}$ or $e^{+}$ candidates because their angl
 \end{figure}
 
 Gas Cherenkov Counter can select $e^{+}$ from the other particles because only $e~{+}$ can radiate cherenkov light at the refractive index of this gas.
-Figure\ref{fig:GC} shows the responce of the Gas Cherenkov Counter.
+Figure\ref{fig:GC} shows the response of the Gas Cherenkov Counter.
 The horizontal axis shows the PMT signal of the Gas Cherenkov Counter.
 The vertical axis shows the number of events.
-Fitting the pedestal with gaussian function,
+Fitting the pedestal with Gaussian function,
 the events larger than the value added $\sim$3.5$\sigma$ to the mean of the pedestal is $e^{+}$ candidates.In this case, GC signal is required more than 104.7 to be $e^{+}$ candidates.\\
 
 \begin{figure}[htbp]
@@ -47,9 +47,9 @@ the events larger than the value added $\sim$3.5$\sigma$ to the mean of the pede
   \label{fig:GC}
 \end{figure}
 
-There are two TOF Counters which has $\sim$200ps resolution 3.5m apart, 
+There are two TOF Counters which has $\sim$200 ps resolution 3.5m apart, 
 and each particle can be selected with the difference of time of flight between them.
-Following table\ref{tb:TOF_expect} is calcurated time of flight when each 800MeV/c particle passes two conters.
+Following table\ref{tb:TOF_expect} is calculated time of flight when each 800MeV/c particle passes two counters.
 As this table shows, $e~{+}$ and $\pi^{+}$ cannot selected because the difference of time of flight is too short for the TOF resolution.\\
 
 \begin{table}
@@ -59,18 +59,18 @@ As this table shows, $e~{+}$ and $\pi^{+}$ cannot selected because the differenc
     Mass(MeV) & 0.511 & 139.57 & 493.68 & 938.27 \\
     Time of Flight($ns$) & 11.67 & 11.84 & 13.71 & 17.98 \\ \hline
   \end{tabular}
-  \caption{Time of flight of eash particle}
+  \caption{Time of flight of each particle}
   \label{tb:TOF_expect}
 \end{table}
 
-Figure\ref{fig:TOF} shows responce of the TOF Counters.
+Figure\ref{fig:TOF} shows response of the TOF Counters.
 The horizontal axis shows the time of flight between TOF1 and TOF2 Counter.
 The vertical axis shows the number of events.
 Signals have clearly divided three structures.
-From table\ref{tb:TOF_expect}, in asending order of time of flight the first structure include $e^{+}$ or $\pi^{+}$ candidates,
-and the second struature include $K^{+}$ candidates,
+From table\ref{tb:TOF_expect}, in ascending order of time of flight the first structure include $e^{+}$ or $\pi^{+}$ candidates,
+and the second structure include $K^{+}$ candidates,
 and the third structure include $p$ candidates.
-The cut value to separete the first strucuture and the second structure is $\sim$4.5$\sigma$ (in this case, the value is setted 13.15ns), and because the second structure and the third structure is clearly separated, the cut value to select them is setted 16.47ns fully apart from the second structure.\\
+The cut value to separate the first structure and the second structure is $\sim$4.5$\sigma$ (in this case, the value is set 13.15ns), and because the second structure and the third structure is clearly separated, the cut value to select them is set 16.47ns fully apart from the second structure.\\
 
 \begin{figure}[htbp]
   \centering
@@ -82,8 +82,8 @@ The cut value to separete the first strucuture and the second structure is $\sim
 $K^{+}$ can selected very efficiently with Fitch Cherenkov Counter,
 so we require the condition FC Signal($K$) is more than 2000
 to get $K^{+}$ events in taking data.
-Figure\ref{fig:TOF_cut} shows responce of the TOF Counters before and after above cut.
-The histgram which filled with black is what is after cut.
+Figure\ref{fig:TOF_cut} shows response of the TOF Counters before and after above cut.
+The histogram which filled with black is what is after cut.
 This figure shows we can get high-purity $K^{+}$ samples with this condition.
 
 \begin{figure}[htbp]
@@ -110,7 +110,7 @@ Table\ref{tb:component} shows the beam components of the data used for analysis.
     60            & 0       & 0         & 1899    & 0     & 13          & 1912             \\ \hline
   \end{tabular}
   \label{tb:component}
-  \caption{Beam components of data ued for analysis}
+  \caption{Beam components of data used for analysis}
 \end{table}
 
 Run 52,55,59 and 60 are the data required the condition FC Signal($K$) is more than 2000 in taking data to get $K^{+}$ events.
