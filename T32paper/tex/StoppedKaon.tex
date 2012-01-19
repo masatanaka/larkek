@@ -1,12 +1,12 @@
 \subsection{Stopped Kaon}
 Hough transform was invented for machine analysis of bubble chamber photographs by Paul.V.C.Hough.\cite{3069654}
-We detect straight lines using hough method , and find Kaon stopped point from the intersection of straight lines.\\
+We find straight lines using hough method , and find Kaon stopped point from the intersection of straight lines.\\
 Figure \ref{hmap2} shows hit map like a Kaon track.
 One point in the X-Y space can be transformed into sinusoidal curve in the $\rho$-$\theta$ space.Figure \ref{rho_theta2} shows sinusoidal curves in all points.
-And, we detect the straight line associated with the largest number of points by choosing the most dense point in $\rho$-$\theta$ space.
+And, we find the straight line associated with the largest number of points by choosing the most dense point in $\rho$-$\theta$ space.
 Next , the sinusoidal curves of the hits associated with frist straight line are removed from figure \ref{rho_theta2}.
 Figure \ref{rho_theta3} shows sinusoidal curves after the hits associated with frist straight line removed.
-We detect second straight line using the same procedure.This procedure is repeated until there are less than three points.Figure \ref{hmap_fit} shows the two straight lines detected by hough transform mehotd.\\
+We find second straight line using the same procedure.This procedure is repeated until there are less than three points.Figure \ref{hmap_fit} shows the two straight lines found by hough transform mehotd.\\
 Kaon stopped point in the liquid argon detecor defined as charge maximum point around the intersection of some lines.
 
 
@@ -37,7 +37,7 @@ Kaon stopped point in the liquid argon detecor defined as charge maximum point a
     \begin{center}
       \includegraphics[width=35mm]{fig/hmap_fit.eps}
     \end{center}
-    \caption{Two lines detected with hough transform method}
+    \caption{Two lines found with hough transform method}
     \label{hmap_fit}
   \end{minipage}
 \end{figure}
@@ -74,8 +74,8 @@ Kaon stopped point in the liquid argon detecor defined as charge maximum point a
 
 
 \subsubsection{BS method}
-In the $\chi^{2}$ method , we can't detect Kaon stopped point in the case of backward decay.
-Then , we detect Kaon stopped point using BS method.\\ 
+In the $\chi^{2}$ method , we can't find Kaon stopped point in the case of backward decay.
+Then , we find Kaon stopped point using BS method.\\ 
 BS method is concept that the Kaon stopped point defined as lightmost channel in the case of backward decay.
 we descript below how the track defined as backward decay.
 $N_{1}$ is defined as Number of cluster hits found by the clustering.
