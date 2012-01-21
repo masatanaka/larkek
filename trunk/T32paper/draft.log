@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  21 JAN 2012 15:25
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  21 JAN 2012 17:29
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -309,22 +309,15 @@ Package natbib Warning: Citation `Ref:FEMTET' on page 23 undefined on input lin
 e 35.
 
 File: fig/2DFieldMap.eps Graphic file (type eps)
-<fig/2DFieldMap.eps> (./tex/NoiseSim.tex
-File: ./fig/example10ch.eps Graphic file (type eps)
- <./fig/example10ch.eps>
-File: ./fig/cos.eps Graphic file (type eps)
-
-<./fig/cos.eps> [23
+<fig/2DFieldMap.eps> (./tex/NoiseSim.tex [23
 
 
 ]
-File: ./fig/randomnoise.eps Graphic file (type eps)
- <./fig/randomnoise.eps>
+File: ./fig/example10ch.eps Graphic file (type eps)
+ <./fig/example10ch.eps>
 File: ./fig/coherentNoise.eps Graphic file (type eps)
- <./fig/coherentNoise.eps>
-File: ./fig/scaling.eps Graphic file (type eps)
 
-<./fig/scaling.eps> [24]) (./tex/CrossTalk.tex [25] [26]
+<./fig/coherentNoise.eps>) (./tex/CrossTalk.tex [24] [25]
 File: fig/cross_talk_1.eps Graphic file (type eps)
 
 <fig/cross_talk_1.eps>
@@ -334,42 +327,42 @@ Overfull \hbox (15.91663pt too wide) in paragraph at lines 21--35
 [][] 
  []
 
-) (./tex/beamenergy2.tex [27] [28]
+) (./tex/beamenergy2.tex
 File: ./fig/K11Br_beamline_sim.eps Graphic file (type eps)
  <./fig/K11Br_beamline_sim.eps>
 File: ./fig/Kaon_pion_momentum_nogrid.eps Graphic file (type eps)
 
-<./fig/Kaon_pion_momentum_nogrid.eps> [29]
+<./fig/Kaon_pion_momentum_nogrid.eps> [26]
 File: ./fig/energy_deposition.eps Graphic file (type eps)
  <./fig/energy_deposition.eps>))
-[30] [31]
+[27] [28]
 \openout2 = `tex/Data-MCComparison.aux'.
 
  (./tex/Data-MCComparison.tex (./tex/StoppedProton2.tex
 
-LaTeX Warning: Reference `fig:various_distribution' on page 32 undefined on inp
+LaTeX Warning: Reference `fig:various_distribution' on page 29 undefined on inp
 ut line 20.
 
 File: ./fig/stop_proton1.eps Graphic file (type eps)
-<./fig/stop_proton1.eps> [32
+<./fig/stop_proton1.eps> [29
 
 
-] [33]
+] [30]
 File: fig/stop_proton2.eps Graphic file (type eps)
  <fig/stop_proton2.eps>
 File: fig/stop_proton3.eps Graphic file (type eps)
 
-<fig/stop_proton3.eps>) (./tex/RecombinationFactor.tex [34]
+<fig/stop_proton3.eps>) (./tex/RecombinationFactor.tex [31]
 File: ./fig/q.eps Graphic file (type eps)
  <./fig/q.eps>
-[35]
+[32]
 File: ./fig/q_0.eps Graphic file (type eps)
  <./fig/q_0.eps>
 File: ./fig/dedx.eps Graphic file (type eps)
  <./fig/dedx.eps>
 File: ./fig/result.eps Graphic file (type eps)
  <./fig/result.eps>)
-(./tex/StoppedKaon2.tex [36]
+(./tex/StoppedKaon2.tex [33]
 File: fig/cHit4_hough.eps Graphic file (type eps)
  <fig/cHit4_hough.eps>
 File: fig/ch27distribution.eps Graphic file (type eps)
@@ -381,11 +374,11 @@ File: fig/RangeVsHitfabs_wcut_hough.eps Graphic file (type eps)
  <fig/RangeVsHitfabs_wcut_hough.eps>
 File: fig/RangeVsHitRatio_wcut_hough.eps Graphic file (type eps)
 
-<fig/RangeVsHitRatio_wcut_hough.eps>)) [37] [38] [39] [40] [41]
+<fig/RangeVsHitRatio_wcut_hough.eps>)) [34] [35] [36] [37] [38]
 \openout2 = `tex/Summary.aux'.
 
 
-(./tex/Summary.tex) [42
+(./tex/Summary.tex) [39
 
 
 ]
@@ -399,7 +392,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 247--248
 
 Package natbib Warning: There were undefined citations.
 
-[43
+[40
 
 ] (./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
 (./tex/SoftwareFramework.aux) (./tex/EventReconstruction.aux)
@@ -416,12 +409,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1657 strings out of 94681
- 20609 string characters out of 1176814
- 73164 words of memory out of 1500000
- 4782 multiletter control sequences out of 10000+50000
+ 1650 strings out of 94681
+ 20510 string characters out of 1176814
+ 73143 words of memory out of 1500000
+ 4777 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,11n,30p,866b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (43 pages, 55000 bytes).
+Output written on draft.dvi (40 pages, 53020 bytes).
