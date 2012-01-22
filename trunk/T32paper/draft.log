@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  21 JAN 2012 17:29
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  22 JAN 2012 23:29
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -313,14 +313,29 @@ File: fig/2DFieldMap.eps Graphic file (type eps)
 
 
 ]
-File: ./fig/example10ch.eps Graphic file (type eps)
- <./fig/example10ch.eps>
-File: ./fig/coherentNoise.eps Graphic file (type eps)
+File: ./fig/FFTdist.eps Graphic file (type eps)
+ <./fig/FFTdist.eps>
+File: ./fig/DATAnoise.eps Graphic file (type eps)
 
-<./fig/coherentNoise.eps>) (./tex/CrossTalk.tex [24] [25]
+<./fig/DATAnoise.eps>
+Overfull \hbox (4.16928pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+File: ./fig/MCnoise.eps Graphic file (type eps)
+<./fig/MCnoise.eps>
+Overfull \hbox (4.16928pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 41--53
+[]$[]$ $[]$ 
+ []
+
+) (./tex/CrossTalk.tex [24] [25]
 File: fig/cross_talk_1.eps Graphic file (type eps)
-
-<fig/cross_talk_1.eps>
+ <fig/cross_talk_1.eps>
 File: fig/cross_talk_2.eps Graphic file (type eps)
  <fig/cross_talk_2.eps>
 Overfull \hbox (15.91663pt too wide) in paragraph at lines 21--35
@@ -409,12 +424,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1650 strings out of 94681
- 20510 string characters out of 1176814
- 73143 words of memory out of 1500000
- 4777 multiletter control sequences out of 10000+50000
+ 1653 strings out of 94681
+ 20527 string characters out of 1176814
+ 73153 words of memory out of 1500000
+ 4779 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,11n,30p,866b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (40 pages, 53020 bytes).
+Output written on draft.dvi (40 pages, 53172 bytes).

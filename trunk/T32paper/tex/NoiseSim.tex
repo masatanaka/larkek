@@ -10,7 +10,7 @@ Coherent noise is generated board by board as the noise scale in the real data w
 The noise scale is defined as a root mean square of pedestal, minimun noise scale is about 3 and maximum noise scale is about 10 in the data.
 
 The ratio of random and coherent noise is 1:1 as equation \ref{PseudoNoise}.
-Figure \ref{coherentNoise} shows real data noise and pseudo noise we implemeted in Monte Carlo simulation.
+Figure \ref{DATAnoise} shows real data noise and Fig.\ref{MCnoise} shows pseudo noise we implemeted in Monte Carlo simulation.
 \begin{equation}
   Pseudo\,Noise = \frac{Random\,Noise + Coherent\,Noise}{2}
   \label{PseudoNoise}
@@ -19,8 +19,8 @@ Figure \ref{coherentNoise} shows real data noise and pseudo noise we implemeted 
 \begin{figure}[!htb]
   \centering
   \centering
-  \includegraphics[width=7cm,clip]{./fig/example10ch.eps}
-  \caption{example distribution of frequency:10ch}
+  \includegraphics[width=10cm,clip]{./fig/FFTdist.eps}
+  \caption{An example distribution of frequency}
   \label{example10ch}
 \end{figure}
 %\begin{figure}[!htb]
@@ -38,11 +38,18 @@ Figure \ref{coherentNoise} shows real data noise and pseudo noise we implemeted 
 %  \label{randomNoise}
 %\end{figure}
 \begin{figure}[!htb]
+\begin{minipage}{0.5\hsize}
   \centering
+  \includegraphics[width=7cm,clip]{./fig/DATAnoise.eps}
+  \caption{Data noise}
+  \label{DATAnoise}
+\end{minipage}
+\begin{minipage}{0.5\hsize}
   \centering
-  \includegraphics[width=7cm,clip]{./fig/coherentNoise.eps}
-  \caption{Coherent noise}
-  \label{coherentNoise}
+  \includegraphics[width=7cm,clip]{./fig/MCnoise.eps}
+  \caption{Pseudo noise(Noise simulation)}
+  \label{MCnoise}
+\end{minipage}
 \end{figure}
 %\begin{figure}[!htb]
 %  \centering
