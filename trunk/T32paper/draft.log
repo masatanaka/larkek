@@ -1,13 +1,13 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  23 JAN 2012 13:22
+This is pTeX, Version 3.141592-p3.1.11 (utf8.euc) (Web2C 7.5.4) (format=platex 2011.7.24)  23 JAN 2012 13:31
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
 (./elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
 \@bls=\dimen118
-(/usr/local/teTeX/share/texmf-dist/tex/latex/base/article.cls
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
-(/usr/local/teTeX/share/texmf-dist/tex/latex/base/size12.clo
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count81
@@ -22,43 +22,43 @@ File: size12.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen119
 )
-(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/keyval.sty
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/teTeX/share/texmf/tex/latex/graphics/dvipdfmx-contrib-latex/graphic
-s.sty
+(/Applications/UpTeX.app/teTeX/share/texmf/tex/latex/graphics/dvipdfmx-contrib-
+latex/graphics.sty
 Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/trig.sty
+
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/graphics.cfg
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/graphics.cfg
 File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: dvips.def on input line 81.
-
-(/usr/local/teTeX/share/texmf-dist/tex/latex/graphics/dvips.def
+ (/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
-)
-(/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/pifont.sty
+) (/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2004/09/15 PSNFSS-v9.2 Pi font support (SPQR) 
 
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
- (/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/upzd.fd
+
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
- (/usr/local/teTeX/share/texmf-dist/tex/latex/psnfss/upsy.fd
+
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count89
@@ -79,7 +79,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(./draft.spl) (/usr/local/teTeX/share/texmf-dist/tex/latex/natbib/natbib.sty
+(./draft.spl)
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2003/06/06 7.1 (PWD)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -91,18 +92,17 @@ LaTeX Info: Redefining \cite on input line 518.
 
 \appnamewidth=\dimen125
 )
-(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
-(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
-))
-(./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
+)) (./draft.aux (./tex/Introduction.aux) (./tex/DataQuality.aux)
 (./tex/SoftwareFramework.aux) (./tex/EventReconstruction.aux
 
 LaTeX Warning: Label `Fig:beforeFFT' multiply defined.
@@ -133,12 +133,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 119.
 LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
-(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
-(/usr/local/teTeX/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 
@@ -208,7 +208,7 @@ al-y-sis(reference)
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-(/usr/local/teTeX/share/texmf-dist/tex/latex/base/omscmr.fd
+(/Applications/UpTeX.app/teTeX/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -429,7 +429,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  1653 strings out of 94681
- 20539 string characters out of 1176814
+ 21046 string characters out of 1174371
  73153 words of memory out of 1500000
  4779 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
