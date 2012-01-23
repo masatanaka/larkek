@@ -1,4 +1,4 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  23 JAN 2012 02:55
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2009.11.16)  23 JAN 2012 13:22
 **draft.tex
 (./draft.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
@@ -368,15 +368,15 @@ File: fig/stop_proton2.eps Graphic file (type eps)
 File: fig/stop_proton3.eps Graphic file (type eps)
 
 <fig/stop_proton3.eps>) (./tex/RecombinationFactor.tex [31]
-File: ./fig/Q.eps Graphic file (type eps)
- <./fig/Q.eps>
+File: ./fig/Q2.eps Graphic file (type eps)
+ <./fig/Q2.eps>
 [32]
-File: ./fig/Q_0.eps Graphic file (type eps)
- <./fig/Q_0.eps>
-File: ./fig/dEdx.eps Graphic file (type eps)
- <./fig/dEdx.eps>
-File: ./fig/RFresult.eps Graphic file (type eps)
- <./fig/RFresult.eps>)
+File: ./fig/Q_02.eps Graphic file (type eps)
+ <./fig/Q_02.eps>
+File: ./fig/dEdx2.eps Graphic file (type eps)
+ <./fig/dEdx2.eps>
+File: ./fig/RFresult2.eps Graphic file (type eps)
+ <./fig/RFresult2.eps>)
 (./tex/StoppedKaon2.tex [33]
 
 LaTeX Warning: Text page 34 contains only floats.
@@ -429,11 +429,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  1653 strings out of 94681
- 20531 string characters out of 1176814
+ 20539 string characters out of 1176814
  73153 words of memory out of 1500000
  4779 multiletter control sequences out of 10000+50000
  16779 words of font info for 67 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
  32i,11n,30p,866b,517s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on draft.dvi (40 pages, 53244 bytes).
+Output written on draft.dvi (40 pages, 53248 bytes).
