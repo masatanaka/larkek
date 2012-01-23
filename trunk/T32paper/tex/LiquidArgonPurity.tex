@@ -1,14 +1,19 @@
+\section{Calibration}
+Put short description.
+\subsection{Through-going Pion}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Liquid Argon Purity}
+\subsection{Liquid Argon Purity}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Attenuation of the drift electron depends on purity of LAr since electronegative impurities capture it \cite{purity}. 
-Thus we need to apply correction to TPC signal charge depends on the drift time.
-We use cosmic ray sample triggered by inner PMT at off-beam timing for measuring the LAr purity, and use this to correct the beam data.
-Figure~\ref{fig:CosmicEvent} shows an event display of typical cosmic muon event across TPC channels.
+Thus we need to apply correction to TPC signal charge according to the drift time.
+We use cosmic ray events triggered by inner PMT at off-beam timing for measuring the LAr purity, and use this to correct the beam data.
+Figure~\ref{fig:CosmicEvent} shows an event display of typical cosmic muon event crossing TPC channels.
 The attenuation of readout charge depending on drift time is clearly seen in the right plot. 
-Readout charge in an event cannot be fitted by exponential because energy deposition follows Landau distribution and charge readout is affected by electric field distortion which is described latter in section~\ref{sec:Efield}.
-
+%Readout charge in an event cannot be fitted by exponential because energy deposition follows Landau distribution and charge readout is affected by electric field distortion which is described latter in section~\ref{sec:Efield}.
+Other effects on readout charge are Landau nature in energy deposition and electric field distortion as discussed in the previous subsection.
+We use multiple events to cancel Landau effect and apply channel response correction to estimate LAr purity.
 
 %\begin{itemize}
 %\item Plot: Typical Lifetime Fit  (Naganoma)
@@ -20,7 +25,7 @@ Readout charge in an event cannot be fitted by exponential because energy deposi
   \includegraphics[width=60mm]{fig/cosmic68_ev258_display.eps}
   \includegraphics[width=60mm]{fig/cosmic68_ev258.eps}
  \end{center}
- \caption{Left: Typical cosmic muon event across TPC channels. Right: Charge deposit as a function of drift time. Colors correspond to different TPC channels.}
+ \caption{Left: Typical cosmic muon event crossing TPC channels. Right: Charge deposit as a function of drift time.}
  \label{fig:CosmicEvent}
 \end{figure}
 
@@ -28,29 +33,31 @@ We select cosmic ray event with more than 20 TPC channels which corresponds to z
 Readout charge is corrected for field distortion and projected to beam direction to correct injection angle.
 We fit readout charge by Landau function in each drift time bin to estimate average charge deposit. 
 Figure~\ref{fig:tauExample} shows example of the average readout charge as a function of drift time which is fitted by exponential to obtain drift electron lifetime. 
-Realistic Monte Carlo simulation shows about 13\% (TBU) smaller lifetime estimation due to noise, field distortion, and FFT effects. 
-We correct output lifetime from these effects.
+%Realistic Monte Carlo simulation shows about 13\% (TBU) smaller lifetime estimation due to noise, field distortion, and FFT effects. 
+%We correct output lifetime from these effects.
 Figure~\ref{fig:CosmicPurity} shows an drift electron lifetime as a function of duration after initial LAr filling.
 Drift electron lifetime was 600 $\mu$s at 60 hours, and 400 $\mu$s after 150 hours.
 %Initial purity looks good, but the purity was slowly degrading while data taking period.
 The degradation is possibly due to impurity from micro leak or out-gassing penetrating faster than purification by gas recirculation.
 But we kept enough drift electron lifetime during data taking period.
+The effects from noise, field distortion, and FFT give about 10\% (to be confirmed) of systematic uncertainty in LAr purity estimation.
+Since charge in simulation is calibrated using through-going $\pi$ data as described later and duration of analyzed beam data is short (about 30 hours), this uncertainty gives negligible effects (to be updated, show percentage) in beam data analysis. 
 
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm]{fig/chargeDep.eps}
   \includegraphics[width=60mm]{fig/tauExample.eps}
  \end{center}
- \caption{TBU. Left: Readout charge as a function of drift time. Readout charge in each drift time bin is fitted by landau function. Right: Average charge readout as a function of drift time which is fitted by exponential to estimate drift electron lifetime.}
+ \caption{Left: Readout charge as a function of drift time. Readout charge in each drift time bin is fitted by landau function. Right: Average charge readout as a function of drift time which is fitted by exponential to estimate drift electron lifetime.}
  \label{fig:tauExample}
 \end{figure}
 
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm]{fig/tauHistory.eps}
+  \includegraphics[width=50mm]{fig/tauHistory.eps}
  \end{center}
- \caption{TBU. Drift electron lifetime as a function of duration after initial LAr filling. The lifetime is used to correct the beam data.}
+ \caption{Drift electron lifetime as a function of duration after initial LAr filling. The lifetime is used to correct the beam data.}
  \label{fig:CosmicPurity}
 \end{figure}
 
