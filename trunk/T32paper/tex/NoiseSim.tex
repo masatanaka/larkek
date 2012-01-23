@@ -1,5 +1,5 @@
 \subsection{FFT Noise}
-There are two kind of noise in the data we obtained, random noise and coherent noise.
+There are two kinds of noise in the data we obtained, random noise and coherent noise.
 Random noise is the noise which exists in each anode channel.
 Coherent noise is in each board.
 The pseudo noise we implemented in Monte Carlo simulation is composed of random and coherent noise by this reason.
@@ -7,10 +7,10 @@ The pseudo noise we implemented in Monte Carlo simulation is composed of random 
 Random noise is generated from FFT(Fast Fourier Transform) distribution of real data. Figure \ref{example10ch} shows an example of FFT distribution.
 
 Coherent noise is generated board by board as the noise scale in the real data we obtained.
-The noise scale is defined as a root mean square of pedestal, minimun noise scale is about 3 and maximum noise scale is about 10 in the data.
+The noise scale is defined as a root mean square of pedestal, minimum noise scale is about 3 and maximum noise scale is about 10 in the data.
 
 The ratio of random and coherent noise is 1:1 as equation \ref{PseudoNoise}.
-Figure \ref{DATAnoise} shows real data noise and Fig.\ref{MCnoise} shows pseudo noise we implemeted in Monte Carlo simulation.
+Figure \ref{DATAnoise} shows real data noise and Fig.\ref{MCnoise} shows pseudo noise we implemented in Monte Carlo simulation.
 \begin{equation}
   Pseudo\,Noise = \frac{Random\,Noise + Coherent\,Noise}{2}
   \label{PseudoNoise}
