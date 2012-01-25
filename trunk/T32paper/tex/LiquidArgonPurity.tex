@@ -1,6 +1,57 @@
 \section{Calibration}
 Put short description.
-\subsection{Through-going Pion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Channel-by-Channel Calibration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+800 MeV/$c$ $\pi~+$ is expected to pass-through the 76 cm
+of TPC fiducial volume with almost uniform energy deposition.
+So it cau be used to calibrate relatvce response of the TPC
+signal charge channel-by-channel. 
+Figure~\ref{fig:PionTrack} shows trajectry of the 800 MeV/$c$ $\pi^+$
+reconstructed by the hit finding and clustering algorithm (See Section \ref{xxx}).
+This figure is obtained from $\sim$300 events of well-selected Pion passing-through the TPC.
+Pion is triggered by the 5 cm$\times$5 cm BDC located in front of the 250L vessel (See Figure~\ref{K11Br_Beam_line}), 
+beam size is consistent with 5 cm ($\sim$ 65 $\mu$s in drift time) at the injection point.
+Then it gradually spread while pion travels through the TPC because of the multiple scattering.
+
+Figure~\ref{fig:PionQvsCh} shows the hit charge as a function of the TPC channel number
+obtained from the same $\pi^+$ data. Grayscale contours show hit charge distributions for
+each channel and black points correspond to average of the hit charge distribution.  
+Aothough we expect the energy deposition of the through-going pion to be uniform,
+we observe relatively large channel dependence. 
+Detailed study of the non-uniformity will be discussed in section xx, in summary,  
+this is mainly because of the distortion of the TPC drift field.
+We use this average charge as channel-by-channel normalization scale.
+The response becames flat in Fig.~\ref{fig:PionQcvsCh} after applying the normalization.
+We apply the same normalization procedure for Kaon, Proton, and Cosmic data analysis.
+
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/PionTrack.eps}
+ \end{center}
+ \caption{800 MeV/c pion sample}
+ \label{fig:PionTrack}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/PionQvsCh.eps}
+ \end{center}
+ \caption{800 MeV/c pion average hit charge}
+ \label{fig:PionQvsCh}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/PionQcvsCh.eps}
+ \end{center}
+ \caption{800 MeV/c pion average hit charge after calibration}
+ \label{fig:PionQcvsCh}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Liquid Argon Purity}
