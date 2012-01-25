@@ -3,10 +3,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Noise Reduction}
 
-Figure \ref{Fig:beforeFFT} shows raw waveform of the TPC signal
-before applying any noise reduction. Two waveforms shown in this plot
-are channel 13 and 37 in Figure~\ref{Fig:Textbook} which are roughly
-proton stopped point and electron shower maximum point, respectively.
+Dotted line in Fig.~\ref{Fig:beforeafterFFT} shows raw waveform of the TPC signal
+before applying any noise reduction. the waveform shown in this plot
+are channel 13 in Fig.~\ref{Fig:Textbook} which are around the proton stopped point.
 Signal-to-noise ratio for this particular case is poor and pion signal 
 which is supposed to be t=400 $\mu$s is almost hidden by the noise. 
 While time width of TPC signal is few $\mu$s which is determined by
@@ -16,17 +15,17 @@ higher frequency. To reduce such noises, we have applied FFT
 Figure \ref{Fig:FFT} shows amplitude as a function of frequency
 for the same event. This clearly shows dominant noise component with
 $>$ 200 kHz has good separation with signal component ($<$ 100 kHz).
-Figure \ref{Fig:afterFFT} shows the waveform after removing high frequency
+Solid line in Fig.~\ref{Fig:beforeafterFFT} shows waveform after removing high frequency
 ($>$ 80 kHz) component by the FFT filter. Signal-to-noise ratio is dramatically
 improved. On the other hand, we expect certain bias to the signal charge
 measurement by this filter, and it will be discussed in Section x.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=100mm]{fig/beforeFFT.eps}
+  \includegraphics[width=100mm]{fig/beforeafterFFT.eps}
  \end{center}
- \caption{TPC raw signal waveform for "Textbook" event channel 13 and 37.}
- \label{Fig:beforeFFT}
+ \caption{TPC signal waveform for "Textbook" event channel 13 before and after applying before (dotted line) and after (solid line) FFT low pass filter with thredhold of 80 kHz.}
+ \label{Fig:beforeafterFFT}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -37,41 +36,9 @@ measurement by this filter, and it will be discussed in Section x.
  \label{Fig:beforeFFT}
 \end{figure}
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=100mm]{fig/afterFFT.eps}
- \end{center}
- \caption{TPC signal waveform after cutting the frequency $>$ 80 kHz.}
- \label{Fig:afterFFT}
-\end{figure}
-
 
 %\subsection{Hit Finding/Clustering}
 \input{tex/hitclustering}
-
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=100mm]{fig/PionTrack.eps}
- \end{center}
- \caption{800 MeV/c pion sample}
- \label{fig:PionTrack}
-\end{figure}
-
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=100mm]{fig/PionQvsCh.eps}
- \end{center}
- \caption{800 MeV/c pion average hit charge}
- \label{fig:PionQvsCh}
-\end{figure}
-
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=100mm]{fig/PionQcvsCh.eps}
- \end{center}
- \caption{800 MeV/c pion average hit charge after calibration}
- \label{fig:PionQcvsCh}
-\end{figure}
 
 \subsection{Stopped Point Finding}
 %\subsubsection{Proton}

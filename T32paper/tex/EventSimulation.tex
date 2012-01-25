@@ -1,73 +1,97 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Event Simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Geant3, recombination, drift velocity}
+Event simulated with the following step
+\begin{itemize}
+\item Physics process and energy deposition of the beam particles (GEANT3)
+\item Conversion of the energy deposition to number of the ionization electrons
+\item Drift of the ionization electrons from the point of energy deposition to Anode plane
+\item Preamp response, and digitization
+\item Noise
+\end{itemize}
+
+\subsection{Energy Deposition in TPC}
 
 We use GEANT3 for simulating energy deposition of initial beam particles and
-secondary particles to LArTPC detector and beamline counters. 
-
-we set the maximum step of Geant to 0.5 mm
-which is enough smaller than the readout pitch of 1 cm.
-It means charge deposition in one strip is typically 
-simulated with 20 GEANT steps.
-
+secondary particles to the TPC detector and beam line counters. 
+Maximum step of GEANT is set to 0.5 mm which is enough smaller than the TPC readout pitch of 1 cm,
+and it means charge deposition in one strip is simulated with more 20 GEANT steps.
 We set energy cut-off for soft electron/photon emission to
 10 keV which is minimum possible energy can be set in GEANT3.
-This cut-off is very important for ionization electron recombination.
-
-Recombination of electron and Argon ion depends on
-the electric field and $dE/dx$. We use a measurement in Ref.\cite{658352}.
-\begin{equation}
-Q = A \frac{Q_0}{1 + k dE/dx}, A = 0.800, k = 0.486
-\end{equation}
-
-Velocity of the drift electron depends on the liquid Argon temperature
-and the electric field. We use a measurement in Ref \cite{649233}.
-
-\begin{itemize}
-\item Plot: Geant Geometry, typical track (Tanaka)
-\item Plot: recombination factor, drift velocity  (Tanaka)
-\end{itemize}
+This cut-off is important for ionization electron recombination.
 
 \subsection{Electric Field}
 
-Electric field of the TPC field cage
-We have calculated the electric field using a 2D FEM (Finite Element Method) package \cite{Ref:FEMTET}.
-
-This field map is used for simulating electron drift.
-
+Figure~\ref{Fit:2DFieldMap} shows electric field of the TPC in V/cm which is calculated using a 2D FEM 
+(Finite Element Method) package \cite{Ref:FEMTET},
+where horizontal axis, vertical axis, and color strength 
+correspond to the beam line direction, the drift direction, the electric field in V/cm, respectively.
+Cathode, Anode, and Anode grid are located at of z=-200 mm, z=200 mm, and z=210 mm. respectively.
+There are significant distortion of the electric field around 4 corners of the TPC fiducial volume,
+and also around x=$\pm$120 mm where support structure of the Cathode and Anode grids exists.
 
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=100mm]{fig/2DFieldMap.eps}
  \end{center}
- \caption{Electric field map obtained from 2D FEM calculation}
+ \caption{Electric field map obtained with 2D FEM where
+horizontal axis corresponds to the beam line direction,
+and vertical axis corresponds to drift direction,
+and color strength corresponds to electric field strength in V/cm.
+}
  \label{Fig:2DFieldMap}
 \end{figure}
 
+\subsection{Drift Electron Simulation}
 
-\subsection{Drift Electron Diffusion}
-\begin{itemize}
-\item Plot: drift simulation  (Tanaka)
-\end{itemize}
+Recombination of electron and Argon ion depends on
+the electric field $E$ and $dE/dx$,
+\begin{equation}
+  Q = A\frac{Q_{0}}{1+(k/E)\times(dE/dx)\times(1/\rho)}
+\end{equation}
+where $Q_{0}$ is initial ionization charge which is obtained from GEANT, $\rho$ is density of liquid Argon (=1.4 g/cm$^3$).
+For $A$ and $k$, we use the measurement by ICARUS collaboration \cite{658352}.
 
-\subsection{Preamp Gain Calibration}
-\begin{itemize}
-\item Preamp gain vs channel number  (Naito)
-\end{itemize}
+After the recombination, drift of the ionization electrons is simulated
+using a step simulation with step size of 0.1 mm.
+Drift velocity of the ionization electron depends on the liquid Argon temperature
+and the electric field. We use a measurement by ICARUS collaboration \cite{649233}.
+Typical drift velocity with 200 V/cm of the drift field and temperature of 92K is 0.8 m/ms.
+Diffusion of the drift electron is considered and we assume size of the transverse diffusion and and lateral diffusion
+are 3.0 mm/m and 1.5 mm/m, respectively.
+Figure~\ref{Fig:DriftSimulation} shows simulated track of the drift electrons with three different positions.
+left plot with x= 0 mm corresponds to the center of the TPC detector, 
+middle plot with x= 130 mm corresponds to the location of anode grid frame,
+and right plot with x= 350 mm corresponds to the edge of the TPC fiducial.
+Because of the field distortion we find significant displacement of the drift electron in
+x direction for x=130 and x=350. It is a main source of the non-uniformity observed in 
+the through-going pion response (Fig.~\ref{fig:PionQvsCh}).
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=40mm]{fig/Drift_0.eps}
+  \includegraphics[width=40mm]{fig/Drift_130.eps}
+  \includegraphics[width=40mm]{fig/Drift_350.eps}
+ \end{center}
+ \caption{Simulation of the electron drift with three different positions of energy deposition. Left, middle, and right plots corresponds to x=0, x=130 mm, and x=350 mm, respectively.}
+ \label{Fig:DriftSimulation}
+\end{figure}
+
+%\begin{itemize}
+%\item Plot: drift simulation  (Tanaka)
+%\end{itemize}
+
+
+\subsection{Preamp Response and Digitization}
+%\begin{itemize}
+%\item Preamp gain vs channel number  (Naito)
+%\end{itemize}
 
 %\subsection{FFT Noise}
 \input{./tex/NoiseSim}
-\begin{itemize}
-\item Plot: simulated event  (Nagasaka)
-\end{itemize}
 
 %\subsection{Cross Talk}
 \input{tex/CrossTalk}
-\begin{itemize}
-\item Plot: signal waveform (proton stopped point + 1)  (A. Okamoto)
-\item Plot: simulated event with and without cross talk (A. Okamoto)
-\end{itemize}
 
 \subsection{Signal and Noise Scale Tuning}
 \begin{itemize}
