@@ -1,0 +1,97 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data Quality}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Collected Data}
+
+Table~\ref{Table:Data} shows list of the collected data while Oct/2010 Run.
+800 MeV/$c$ pion is expected to pass-through the detector as MIP,
+and have uniform energy deposition to all the TPC channels.
+So this data set is very useful for calibrating the detector response (See section xxx).
+800 MeV/$c$ proton stops after ~15 cm of flight distance inside the TPC fiducial volume
+with relatively large $dE/dx$. So we use the proton data set for validation of the
+detector response at high $dE/dx$ region(See section xxx).
+We have collected three different Kaon data by varying thickness of the degrader. 
+540, 630, 680 MeV/$c$ are corresponds to the momentum degraded by 
+2 lead glass, 1 lead glass + 1 lead block, and 1 lead glass, respectively, 
+and such Kaon stops after 10 cm, 50 cm, and 65 cm of flight distance inside TPC fiducial volume.
+
+Figure~\ref{Fig:Textbook} shows an 2D display of typical event 
+taken with 800 MeV/$c$ electron trigger.
+Horizontal axis corresponds to TPC channel number 
+and zero means most upper stream strip. 
+Since strip pitch is 1 cm, this is equivalent to
+distance from beam injection point in cm.
+Vertical axis corresponds to electron drift time in $\mu$s
+and t=0 means trigger timing. In this TPC, anode and cathode is
+located at top and bottom of the detector, respectively,
+t=0 means energy deposition at anode and longer drift time 
+means energy deposition in lower height.
+With 200 V/cm of electric field, drift velocity is about 0.8 m/ms.
+So drift of full detector (40 cm) takes 500 $\mu$s.
+Color strength of the plot corresponds to the TPC signal pulse height
+in ADC counts which is roughly proportional to $dE/dx$ of the track.
+In this event, triggered electron can be clearly seen center of the detector
+as an electromagnetic shower while there are two other particles 
+accidentally overlapped with the triggered electron. 
+Track at t=100 $\mu$s is considered as
+a proton which stops after 15 cm of flight distance and 
+has large $dE/dx$ around the stopped point.
+Track at t=400 $\mu$s is considered as
+a pion which passes-through the detector and 
+has uniform $dE/dx$ over the TPC channels.
+This event already gives us some idea for how good 
+the particle identification performance of the LArTPC is.
+
+Figure~\ref{Fig:Kmunu} shows a typical $K \to\mu\nu$ like event.
+We can clearly identify a kink of the track at 60 cm which is considered
+as stopped point of Kaon and it decays to  
+
+Energy deposition of the track is about MIP at the injection point
+and gradually increase towards the stopped point at 60 cm.
+
+
+
+\begin{table}[h]
+\begin{center}
+\caption{List of collected data}
+\begin{tabular}{l|ll}
+  Particle  &Momentum (MeV/$c$) &Number of Events\\
+\hline
+  Pion      &800                &3,000\\
+  Proton    &800                &1,500\\
+  Kaon      &540 (2LG)          &7,000\\
+  Kaon      &630 (1LG+1LB)      &40,000\\
+  Kaon      &680 (1LB)          &35,000\\
+  electron  &800                &2,500\\
+  electron  &200                &10,000\\
+  pion      &200                &10,000\\
+\end{tabular}
+\label{Table:Data}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/Textbook.eps}
+ \end{center}
+ \caption{Event display of 800 MeV/$c$ electron triggered event.
+Accidentally overlapped with a proton and a pion.}
+ \label{Fig:Textbook}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/Kmunu.eps}
+ \end{center}
+ \caption{Event display of Kaon 630 MeV/$c$ triggered event}
+ \label{Fig:Kmunu}
+\end{figure}
+
+%\subsection{Beam Quality}
+\input{tex/BeamQuality}
+ 
+%\subsection{Beam Energy, Position}
+\input{tex/beamenergy}

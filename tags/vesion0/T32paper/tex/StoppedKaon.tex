@@ -1,0 +1,97 @@
+\subsection{Stopped Kaon}
+Hough transform was invented for machine analysis of bubble chamber photographs by Paul.V.C.Hough.\cite{3069654}
+We find straight lines using hough method , and find Kaon stopped point from the intersection of straight lines.\\
+Figure \ref{hmap2} shows hit map like a Kaon track.
+One point in the X-Y space can be transformed into sinusoidal curve in the $\rho$-$\theta$ space.Figure \ref{rho_theta2} shows sinusoidal curves in all points.
+And, we find the straight line associated with the largest number of points by choosing the most dense point in $\rho$-$\theta$ space.
+Next , the sinusoidal curves of the hits associated with frist straight line are removed from figure \ref{rho_theta2}.
+Figure \ref{rho_theta3} shows sinusoidal curves after the hits associated with frist straight line removed.
+We find second straight line using the same procedure.This procedure is repeated until there are less than three points.Figure \ref{hmap_fit} shows the two straight lines found by hough transform mehotd.\\
+Kaon stopped point in the liquid argon detecor defined as charge maximum point around the intersection of some lines.
+
+
+\begin{figure}[!htb]
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=35mm]{fig/hmap2.eps}
+    \end{center}
+    \caption{Hit map like a Kaon track}
+    \label{hmap2}
+  \end{minipage}
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=35mm]{fig/rho_theta2.eps}
+    \end{center}
+    \caption{sinusoidal curves getting form all hough transformed  points of Figure \ref{hmap2}}
+    \label{rho_theta2}
+  \end{minipage}
+  \\
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=35mm]{fig/rho_theta_kink.eps}
+    \end{center}
+    \caption{sinusoidal curves removed the points associated with first straight line from figure \ref{rho_theta2}}
+    \label{rho_theta3}
+  \end{minipage}
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=35mm]{fig/hmap_fit.eps}
+    \end{center}
+    \caption{Two lines found with hough transform method}
+    \label{hmap_fit}
+  \end{minipage}
+\end{figure}
+
+
+\subsubsection{Chi2 method}
+$\chi^{2}$ method is the algorithm that search the point of rapidly increasing fit'$\chi^{2}$ and the point defined as the stopped point.
+Because the charged particle coming from upsteam of beam line , track reconstruction is started from minimum channel  to the maximum channel of the cluster.\\
+Figure \ref{hmap3} shows hit map like a Kaon track.
+We start fitting with straight line from minimum channel to maximum channel.Figure \ref{xvschi} shows range vs fit'$\chi^{2}$ distribution.
+As it can be noiced for figure \ref{xvschi}, $\chi^{2}$ is increased rapidly if the straight line is strayed out.
+Then , we search the strayed point from the straight line by setting reasonable threhold and draw from minimum channel to the strayed point.
+This procedure is done from maximum channel to minimum channel in the same way.
+And we draw from maximum channel to the strayed point.
+Kaon stopped point in the liquid argon detecor defined as charge maximum point around the intersection of two lines.
+
+
+\begin{figure}[!htb]
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=50mm]{fig/hmap_kink_chi2.eps}
+    \end{center}
+    \caption{hit map like a Kaon track}
+    \label{hmap3}
+  \end{minipage}
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=50mm]{fig/chi2_kink_chi2.eps}
+    \end{center}
+    \caption{range vs $\chi^{2}$ distribution}
+    \label{xvschi}
+  \end{minipage}
+\end{figure}
+
+
+\subsubsection{BS method}
+In the $\chi^{2}$ method , we can't find Kaon stopped point in the case of backward decay.
+Then , we find Kaon stopped point using BS method.\\ 
+BS method is concept that the Kaon stopped point defined as lightmost channel in the case of backward decay.
+we descript below how the track defined as backward decay.
+$N_{1}$ is defined as Number of cluster hits found by the clustering.
+Stopped point finding is started from minimum channel.
+We search for the closet timing hit in next channel from current channel hit. 
+Then , we repeat this procedure until maximum channel and count the number of selected hit information($N_{2}$).
+In the case of backward decay , $N_{1}$ is larger than $N{2}$.
+So , we set reasonable threhold of the difference between $N_{1}$ and $N{2}$ , and if the $N_{1}>N_{2}$ is over the threshold , the track is defined as backward decay.
+In the case of backward decay , we defined charge maximum point around the maximum channel as the stopped point. 
+
+\begin{figure}[!htb]
+  \begin{center}
+    \includegraphics[width=50mm]{fig/hmap_kink_BS.eps}
+  \end{center}
+  \caption{hit map like a Kaon track}
+  \label{hmap_BS}
+\end{figure}
+
+

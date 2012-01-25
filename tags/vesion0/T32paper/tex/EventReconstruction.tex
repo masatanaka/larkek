@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Event Reconstruction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Noise Reduction}
+
+Dotted line in Fig.~\ref{Fig:beforeafterFFT} shows raw waveform of the TPC signal
+before applying any noise reduction. the waveform shown in this plot
+are channel 13 in Fig.~\ref{Fig:Textbook} which are around the proton stopped point.
+Signal-to-noise ratio for this particular case is poor and pion signal 
+which is supposed to be t=400 $\mu$s is almost hidden by the noise. 
+While time width of TPC signal is few $\mu$s which is determined by
+drift time between anode and anode-grid, dominant noise component looks
+higher frequency. To reduce such noises, we have applied FFT 
+(Fast Flourier Transformation) filter to cut the high frequency component.
+Figure \ref{Fig:FFT} shows amplitude as a function of frequency
+for the same event. This clearly shows dominant noise component with
+$>$ 200 kHz has good separation with signal component ($<$ 100 kHz).
+Solid line in Fig.~\ref{Fig:beforeafterFFT} shows waveform after removing high frequency
+($>$ 80 kHz) component by the FFT filter. Signal-to-noise ratio is dramatically
+improved. On the other hand, we expect certain bias to the signal charge
+measurement by this filter, and it will be discussed in Section x.
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/beforeafterFFT.eps}
+ \end{center}
+ \caption{TPC signal waveform for "Textbook" event channel 13 before and after applying before (dotted line) and after (solid line) FFT low pass filter with thredhold of 80 kHz.}
+ \label{Fig:beforeafterFFT}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=100mm]{fig/FFT.eps}
+ \end{center}
+ \caption{FFT frequency amplitude distribution}
+ \label{Fig:beforeFFT}
+\end{figure}
+
+
+%\subsection{Hit Finding/Clustering}
+\input{tex/hitclustering}
+
+\subsection{Stopped Point Finding}
+%\subsubsection{Proton}
+%\input{tex/StoppedProton}
+%\subsection{Stopped Kaon}
+\input{tex/StoppedKaon}
+

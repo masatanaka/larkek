@@ -1,0 +1,98 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox:  0 0 567 247
+%%Title: FFT.eps: 
+%%Creator: ROOT Version 5.28/00
+%%CreationDate: Wed Jan 25 13:12:41 2012
+%%EndComments
+%%BeginProlog
+80 dict begin
+/s {stroke} def /l {lineto} def /m {moveto} def /t {translate} def
+/r {rotate} def /rl {roll}  def /R {repeat} def
+/d {rlineto} def /rm {rmoveto} def /gr {grestore} def /f {eofill} def
+/c {setrgbcolor} def /black {0 setgray} def /sd {setdash} def
+/cl {closepath} def /sf {scalefont setfont} def /lw {setlinewidth} def
+/box {m dup 0 exch d exch 0 d 0 exch neg d cl} def
+/NC{systemdict begin initclip end}def/C{NC box clip newpath}def
+/bl {box s} def /bf {box f} def /Y { 0 exch d} def /X { 0 d} def 
+/K {{pop pop 0 moveto} exch kshow} bind def
+/ita {/ang 15 def gsave [1 0 ang dup sin exch cos div 1 0 0] concat} def 
+/mp {newpath /y exch def /x exch def} def
+/side {[w .77 mul w .23 mul] .385 w mul sd w 0 l currentpoint t -144 r} def
+/mr {mp x y w2 0 360 arc} def /m24 {mr s} def /m20 {mr f} def
+/mb {mp x y w2 add m w2 neg 0 d 0 w neg d w 0 d 0 w d cl} def
+/mt {mp x y w2 add m w2 neg w neg d w 0 d cl} def
+/m21 {mb f} def /m25 {mb s} def /m22 {mt f} def /m26{mt s} def
+/m23 {mp x y w2 sub m w2 w d w neg 0 d cl f} def
+/m27 {mp x y w2 add m w3 neg w2 neg d w3 w2 neg d w3 w2 d cl s} def
+/m28 {mp x w2 sub y w2 sub w3 add m w3 0 d  0 w3 neg d w3 0 d 0 w3 d w3 0 d  0 w3 d w3 neg 0 d 0 w3 d w3 neg 0 d 0 w3 neg d w3 neg 0 d cl s } def
+/m29 {mp gsave x w2 sub y w2 add w3 sub m currentpoint t 4 {side} repeat cl fill gr} def
+/m30 {mp gsave x w2 sub y w2 add w3 sub m currentpoint t 4 {side} repeat cl s gr} def
+/m31 {mp x y w2 sub m 0 w d x w2 sub y m w 0 d x w2 sub y w2 add m w w neg d x w2 sub y w2 sub m w w d s} def
+/m32 {mp x y w2 sub m w2 w d w neg 0 d cl s} def
+/m33 {mp x y w2 add m w3 neg w2 neg d w3 w2 neg d w3 w2 d cl f} def
+/m34 {mp x w2 sub y w2 sub w3 add m w3 0 d  0 w3 neg d w3 0 d 0 w3 d w3 0 d  0 w3 d w3 neg 0 d 0 w3 d w3 neg 0 d 0 w3 neg d w3 neg 0 d cl f } def
+/m2 {mp x y w2 sub m 0 w d x w2 sub y m w 0 d s} def
+/m5 {mp x w2 sub y w2 sub m w w d x w2 sub y w2 add m w w neg d s} def
+/reEncode {exch findfont dup length dict begin {1 index /FID eq  {pop pop} {def} ifelse } forall /Encoding exch def currentdict end dup /FontName get exch definefont pop } def [/Times-Bold /Times-Italic /Times-BoldItalic /Helvetica /Helvetica-Oblique
+ /Helvetica-Bold /Helvetica-BoldOblique /Courier /Courier-Oblique /Courier-Bold /Courier-BoldOblique /Times-Roman /AvantGarde-Book /AvantGarde-BookOblique /AvantGarde-Demi /AvantGarde-DemiOblique /Bookman-Demi /Bookman-DemiItalic /Bookman-Light
+ /Bookman-LightItalic /Helvetica-Narrow /Helvetica-Narrow-Bold /Helvetica-Narrow-BoldOblique /Helvetica-Narrow-Oblique /NewCenturySchlbk-Roman /NewCenturySchlbk-Bold /NewCenturySchlbk-BoldItalic /NewCenturySchlbk-Italic /Palatino-Bold
+ /Palatino-BoldItalic /Palatino-Italic /Palatino-Roman ] {ISOLatin1Encoding reEncode } forall%%EndProlog
+%%BeginSetup
+%%EndSetup
+newpath  gsave  .25 .25 scale  gsave  0 0 t black[  ] 0 sd 6 lw 1 1 1 c 2268 989 0 0 bf black 1 1 1 c 2268 989 0 0 bf black 0.999 0.999 0.999 c 1542 732 386 178 bf black 1542 732 386 178 bl 1 1 1 c black 388 180 m -1 X 1541 X s 386 178 m 1542 X s
+ gsave  2268 989 0 0 C 1443.75 49.6875 t 0 r /Helvetica findfont 65.5018 sf 0 0 m (Frequency \(kHz\)) show NC gr  386 198 m -20 Y s 442 188 m -10 Y s 498 188 m -10 Y s 554 188 m -10 Y s 610 198 m -20 Y s 666 188 m -10 Y s 722 188 m -10 Y s 778 188 m
+ -10 Y s 834 198 m -20 Y s 890 188 m -10 Y s 946 188 m -10 Y s 1002 188 m -10 Y s 1058 198 m -20 Y s 1114 188 m -10 Y s 1171 188 m -10 Y s 1227 188 m -10 Y s 1283 198 m -20 Y s 1339 188 m -10 Y s 1395 188 m -10 Y s 1451 188 m -10 Y s 1507 198 m -20 Y
+ s 1563 188 m -10 Y s 1619 188 m -10 Y s 1675 188 m -10 Y s 1731 198 m -20 Y s 1731 198 m -20 Y s 1787 188 m -10 Y s 1843 188 m -10 Y s 1900 188 m -10 Y s
+ gsave  2268 989 0 0 C 368.625 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (0) show NC gr 
+ gsave  2268 989 0 0 C 560.625 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (200) show NC gr 
+ gsave  2268 989 0 0 C 786.5 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (400) show NC gr 
+ gsave  2268 989 0 0 C 1010.06 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (600) show NC gr 
+ gsave  2268 989 0 0 C 1233.69 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (800) show NC gr 
+ gsave  2268 989 0 0 C 1443.75 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (1000) show NC gr 
+ gsave  2268 989 0 0 C 1667.38 117.438 t 0 r /Helvetica findfont 56.467 sf 0 0 m (1200) show NC gr  386 910 m 1542 X s 386 890 m 20 Y s 442 900 m 10 Y s 498 900 m 10 Y s 554 900 m 10 Y s 610 890 m 20 Y s 666 900 m 10 Y s 722 900 m 10 Y s 778 900 m 10
+ Y s 834 890 m 20 Y s 890 900 m 10 Y s 946 900 m 10 Y s 1002 900 m 10 Y s 1058 890 m 20 Y s 1114 900 m 10 Y s 1171 900 m 10 Y s 1227 900 m 10 Y s 1283 890 m 20 Y s 1339 900 m 10 Y s 1395 900 m 10 Y s 1451 900 m 10 Y s 1507 890 m 20 Y s 1563 900 m 10
+ Y s 1619 900 m 10 Y s 1675 900 m 10 Y s 1731 890 m 20 Y s 1731 890 m 20 Y s 1787 900 m 10 Y s 1843 900 m 10 Y s 1900 900 m 10 Y s 386 178 m 732 Y s
+ gsave  2268 989 0 0 C 122.5 280 t 90 r /Helvetica findfont 65.5018 sf 0 0 m (Amplitude \(ADC cnts\)) show NC gr  436 178 m -50 X s 411 207 m -25 X s 411 237 m -25 X s 411 266 m -25 X s 411 295 m -25 X s 436 324 m -50 X s 411 354 m -25 X s 411 383 m
+ -25 X s 411 412 m -25 X s 411 442 m -25 X s 436 471 m -50 X s 411 500 m -25 X s 411 529 m -25 X s 411 559 m -25 X s 411 588 m -25 X s 436 617 m -50 X s 411 647 m -25 X s 411 676 m -25 X s 411 705 m -25 X s 411 734 m -25 X s 436 764 m -50 X s 411 793
+ m -25 X s 411 822 m -25 X s 411 852 m -25 X s 411 881 m -25 X s 436 910 m -50 X s
+ gsave  2268 989 0 0 C 321.25 158.125 t 0 r /Helvetica findfont 56.467 sf 0 0 m (0) show NC gr 
+ gsave  2268 989 0 0 C 226.375 304.875 t 0 r /Helvetica findfont 56.467 sf 0 0 m (1000) show NC gr 
+ gsave  2268 989 0 0 C 226.375 451.688 t 0 r /Helvetica findfont 56.467 sf 0 0 m (2000) show NC gr 
+ gsave  2268 989 0 0 C 226.375 598.5 t 0 r /Helvetica findfont 56.467 sf 0 0 m (3000) show NC gr 
+ gsave  2268 989 0 0 C 226.375 745.312 t 0 r /Helvetica findfont 56.467 sf 0 0 m (4000) show NC gr 
+ gsave  2268 989 0 0 C 226.375 889.875 t 0 r /Helvetica findfont 56.467 sf 0 0 m (5000) show NC gr  1928 178 m 732 Y s 1877 178 m 51 X s 1902 207 m 26 X s 1902 237 m 26 X s 1902 266 m 26 X s 1902 295 m 26 X s 1877 324 m 51 X s 1902 354 m 26 X s 1902
+ 383 m 26 X s 1902 412 m 26 X s 1902 442 m 26 X s 1877 471 m 51 X s 1902 500 m 26 X s 1902 529 m 26 X s 1902 559 m 26 X s 1902 588 m 26 X s 1877 617 m 51 X s 1902 647 m 26 X s 1902 676 m 26 X s 1902 705 m 26 X s 1902 734 m 26 X s 1877 764 m 51 X s
+ 1902 793 m 26 X s 1902 822 m 26 X s 1902 852 m 26 X s 1902 881 m 26 X s 1877 910 m 51 X s 1 1 1 c 406 49 23 935 bf black
+ gsave  2268 989 0 0 C 66 944.062 t 0 r /Helvetica-Bold findfont 38.3976 sf 0 0 m (Run 382 Event 25) show NC gr  387 910 m -410 Y s 387 500 m 1 -129 d 2 -164 d 1 403 d 1 39 d 2 -157 d 1 -173 d 1 -80 d 2 363 d 1 -40 d 2 -185 d 1 -23 d 1 -33 d 2 200 d
+ 1 -34 d 1 -138 d 2 -62 d 1 72 d 2 174 d 1 -165 d 1 5 d 2 -106 d 1 159 d 1 52 d 2 -184 d 1 81 d 1 -87 d 2 67 d 1 206 d 2 -191 d 1 -22 d 1 -82 d 2 87 d 1 -68 d 1 74 d 2 -33 d 1 -51 d 2 121 d 1 -160 d 1 120 d 2 -34 d 1 67 d 1 -71 d 2 -70 d 1 78 d 1 -26
+ d 2 13 d 1 -37 d 2 27 d 1 -6 d 1 -3 d 2 48 d 1 -92 d 1 -6 d 2 -11 d 1 2 d 2 81 d 1 -123 d 1 59 d 2 10 d 1 -9 d 1 16 d 2 -1 d 1 -14 d 1 -18 d 2 13 d 1 2 d 2 -34 d 1 26 d 1 -25 d 2 45 d 1 -64 d 1 57 d 2 -30 d 1 X 2 3 d 1 -14 d 1 1 d 2 -6 d 1 5 d 1 42
+ d 2 -20 d 1 41 d 2 -18 d 1 -36 d 1 -16 d 2 44 d 1 31 d 1 -67 d 2 -17 d 1 63 d 1 -54 d 2 38 d 1 -60 d 2 21 d 1 25 d 1 -4 d 2 63 d 1 -50 d 1 -10 d 2 -38 d 1 7 d 2 21 d 1 -6 d 1 -9 d 2 45 d 1 -10 d 1 -31 d 2 23 d 1 -26 d 1 39 d 2 -33 d 1 2 d 2 13 d 1
+ -18 d 1 54 d 2 -42 d 1 32 d 1 -33 d 2 -35 d 1 11 d 2 36 d 1 -52 d 1 23 d 2 38 d 1 -39 d 1 18 d 2 -9 d 1 -25 d 1 -2 d 2 37 d 1 -11 d 2 12 d 1 -22 d 1 13 d 2 -4 d 1 -11 d 1 1 d 2 9 d 1 X 2 11 d 1 14 d 1 -53 d 2 23 d 1 1 d 1 -14 d 2 11 d 1 -15 d 1 49 d
+ 2 -50 d 1 13 d 2 46 d 1 6 d 1 -54 d 2 X 1 26 d 1 -33 d 2 11 d 1 -7 d 2 103 d 1 -45 d 1 -34 d 2 -9 d 1 -5 d 1 16 d 2 2 d 1 -11 d 2 -18 d 1 -4 d 1 9 d 2 7 d 1 6 d 1 32 d 2 -46 d 1 187 d 1 -142 d 2 -12 d 1 2 d 2 -27 d 1 57 d 1 -22 d 2 43 d 1 8 d 1 -45
+ d 2 149 d 1 78 d 2 -226 d 1 229 d 1 327 d 2 -33 d 1 -375 d 1 -56 d 2 -79 d 1 -21 d 1 21 d 2 -2 d 1 -50 d 2 13 d 1 -5 d 1 -9 d 2 12 d 1 -16 d 1 6 d 2 681 d 1 -639 d 2 -18 d 1 -15 d 1 -31 d 2 52 d 1 -13 d 1 11 d 2 3 d 1 48 d 1 -39 d 2 -9 d 1 -5 d 2 62
+ d 1 211 d 1 95 d 2 -340 d 1 -23 d 1 -13 d 2 -11 d 1 28 d 2 -38 d 1 -9 d 1 2 d 2 1 d 1 5 d 1 -13 d 2 -5 d 1 58 d 1 355 d 2 -336 d 1 -31 d 2 1 d 1 -26 d 1 9 d 2 20 d 1 -16 d 1 5 d 2 -27 d 1 11 d 2 35 d 1 -31 d 1 47 d 2 103 d 1 166 d 1 -262 d 2 -42 d 1
+ -28 d 2 26 d 1 -4 d 1 -3 d 2 -20 d 1 11 d 1 2 d 2 -13 d 1 15 d 1 -13 d 2 14 d 1 144 d 2 -92 d 1 -67 d 1 3 d 2 4 d 1 -6 d 1 -3 d 2 4 d 1 -10 d 2 16 d 1 -11 d 1 18 d 2 -13 d 1 34 d 1 -1 d 2 149 d 1 -156 d 1 -32 d 2 2 d 1 -12 d 2 3 d 1 3 d 1 -2 d 2 1 d
+ 1 12 d 1 -12 d 2 3 d 1 6 d 2 -4 d 1 52 d 1 -18 d 2 -26 d 1 X 1 -1 d 2 -9 d 1 34 d 1 -18 d 2 -23 d 1 29 d 2 -12 d 1 -3 d 1 -8 d 2 12 d 1 -15 d 1 93 d 2 -95 d 1 2 d 2 33 d 1 -35 d 1 9 d 2 -10 d 1 17 d 1 -14 d 2 6 d 1 -5 d 1 -6 d 2 15 d 1 6 d 2 -1 d 1
+ 2 d 1 -18 d 2 1 d 1 1 d 1 -2 d 2 -3 d 1 5 d 2 5 d 1 -5 d 1 10 d 2 5 d 1 -20 d 1 11 d 2 -10 d 1 68 d 1 -62 d 2 5 d 1 -4 d 2 -5 d 1 6 d 1 3 d 2 -9 d 1 3 d 1 8 d 2 -11 d 1 9 d 2 -8 d 1 17 d 1 -3 d 2 -1 d 1 -3 d 1 -14 d 2 4 d 1 -1 d 2 -6 d 1 3 d 1 -4 d
+ 2 16 d 1 5 d 1 -14 d 2 9 d 1 -3 d 1 1 d 2 59 d 1 -53 d 2 -15 d 1 7 d 1 2 d 2 10 d 1 -11 d 1 38 d 2 2 d 1 56 d 2 -102 d 1 29 d 1 -34 d 2 11 d 1 45 d 1 -47 d 2 -6 d 1 -4 d 1 10 d 2 -5 d 1 14 d 2 -21 d 1 4 d 1 1 d 2 -3 d 1 3 d 1 10 d 2 3 d 1 -1 d 2 68
+ d 1 -54 d 1 -11 d 2 -9 d 1 4 d 1 -5 d 2 10 d 1 -11 d 1 4 d 3 X 2 -8 d 1 16 d 1 -5 d 2 29 d 1 19 d 1 -50 d 2 -2 d 1 -5 d 2 -3 d 1 -2 d 1 9 d 2 1 d 1 -3 d 1 10 d 2 -11 d 1 11 d 1 -6 d 2 2 d 1 39 d 2 -23 d 1 -19 d 1 1 d 2 -1 d 1 -1 d 1 -3 d 2 5 d 1 -5
+ d 2 -4 d 1 11 d 1 -3 d 2 -12 d 1 5 d 1 20 d 2 35 d 1 -55 d 2 7 d 1 17 d 1 -15 d 2 -6 d 1 X 1 -4 d 2 5 d 1 -3 d 1 11 d 2 -5 d 1 -12 d 2 8 d 1 68 d 1 -58 d 2 -13 d 1 3 d 1 2 d 2 -3 d 1 -1 d 2 6 d 1 -7 d 1 X 2 3 d 1 4 d 1 9 d 2 -9 d 1 8 d 1 40 d 2 -50
+ d 1 9 d 2 -16 d 1 7 d 1 -6 d 2 4 d 1 -4 d 1 -4 d 2 7 d 1 10 d 2 -13 d 1 -1 d 1 9 d 2 23 d 1 -6 d 1 -29 d 2 6 d 1 4 d 1 -7 d 2 3 d 1 X 2 4 d 1 -8 d 1 X 2 7 d 1 -3 d 1 7 d 2 2 d 1 41 d 2 -46 d 1 -3 d 1 -3 d 2 5 d 1 -5 d 1 -1 d 2 4 d 1 2 d 1 1 d 2 -9 d
+ 1 2 d 2 -1 d 1 7 d 1 7 d 2 5 d 1 -9 d 1 -3 d 2 -3 d 1 -1 d 2 4 d 1 -5 d 1 -1 d 2 6 d 1 -8 d 1 10 d 2 -9 d 1 1 d 2 8 d 1 40 d 1 -36 d 2 -4 d 1 -3 d 3 X 1 2 d 1 -8 d 2 14 d 1 -9 d 2 X 1 -1 d 1 1 d 2 1 d 1 5 d 1 2 d 2 -10 d 1 1 d 2 2 d 1 -5 d 1 1 d 2 X
+ 1 2 d 1 2 d 2 -3 d 1 3 d 1 -4 d 2 7 d 1 -1 d 2 54 d 1 -57 d 1 1 d 2 4 d 1 -6 d 1 6 d 2 X 1 -3 d 2 -6 d 1 6 d 1 -4 d 2 X 1 -1 d 1 X 2 3 d 1 11 d 1 -15 d 2 -2 d 1 3 d 2 X 1 -4 d 1 3 d 2 5 d 1 -3 d 1 3 d 2 -5 d 1 2 d 2 -5 d 1 3 d 1 32 d 2 -19 d 1 -8 d
+ 1 -6 d 2 8 d 1 -3 d 1 2 d 2 1 d 1 -4 d 2 6 d 1 1 d 1 -9 d 2 -1 d 1 6 d 1 -9 d 2 26 d 1 -23 d 2 -3 d 1 8 d 1 1 d 2 -3 d 1 4 d 1 -8 d 2 X 1 7 d 1 -7 d 2 13 d 1 -11 d 2 6 d 1 34 d 1 -38 d 2 3 d 1 -3 d 1 -1 d 2 -4 d 1 3 d 2 X 1 2 d 1 -3 d 2 3 d 1 -1 d 1
+ -3 d 2 5 d 1 3 d 2 13 d 1 -16 d 1 -3 d 2 -2 d 1 9 d 1 -8 d 2 6 d 1 -5 d 1 -1 d 2 -3 d 1 7 d 2 3 d 1 3 d 1 2 d 2 33 d 1 -27 d 1 -12 d 2 -2 d 1 -2 d 2 -2 d 1 3 d 1 -1 d 2 -3 d 1 2 d 1 2 d 2 -5 d 1 9 d 1 -7 d 2 X 1 25 d 2 -11 d 1 -15 d 1 X 2 7 d 1 X 1
+ -6 d 2 1 d 1 4 d 2 -6 d 1 9 d 1 -6 d 3 X 1 10 d 2 -8 d 1 -1 d 1 -1 d 2 -3 d 1 7 d 2 -4 d 1 -3 d 1 -1 d 2 3 d 1 -3 d 1 X 2 11 d 1 -5 d 2 X 1 -5 d 1 X 2 13 d 1 -11 d 1 4 d 2 -7 d 1 2 d 1 1 d 2 -1 d 1 X 2 2 d 1 -2 d 1 -3 d 2 3 d 1 -4 d 1 5 d 2 3 d 1 -2
+ d 2 2 d 1 -7 d 1 6 d 2 -1 d 1 -4 d 1 8 d 2 -6 d 1 -1 d 2 X 1 3 d 1 -5 d 2 10 d 1 -2 d 1 -2 d 2 X 1 -3 d 1 5 d 2 -3 d 1 1 d 2 2 d 1 -1 d 1 -7 d 2 7 d 1 -7 d 1 5 d 2 X 1 -1 d 2 -3 d 1 -1 d 1 6 d 2 -3 d 1 2 d 1 -4 d 2 4 d 1 -5 d 1 12 d 2 -6 d 1 -3 d 2
+ 3 d 1 X 1 11 d 2 -2 d 1 57 d 1 7 d 2 -46 d 1 -28 d 2 7 d 1 -10 d 1 6 d 2 -3 d 1 3 d 1 -7 d 2 5 d 1 -3 d 1 -1 d 2 8 d 1 -5 d 2 -3 d 1 1 d 1 3 d 2 1 d 1 -3 d 3 X 1 1 d 2 -3 d 1 X 1 4 d 2 -3 d 1 10 d 1 -8 d 2 -2 d 1 -1 d 1 -2 d 2 1 d 1 -2 d 2 7 d 1 -1
+ d 1 2 d 2 -5 d 1 -1 d 1 3 d 2 -3 d 1 4 d 2 X 1 -3 d 1 2 d 2 -3 d 1 3 d 1 X 2 5 d 1 -3 d 2 -4 d 1 -3 d 1 3 d 2 -1 d 1 1 d 1 5 d 2 -5 d 1 2 d 1 -2 d 2 5 d 1 -2 d 2 -3 d 1 2 d 1 1 d 2 -2 d 1 4 d 1 -7 d 2 2 d 1 4 d 2 -1 d 1 -3 d 3 X 1 -1 d 1 2 d 2 -1 d
+ 2 X 2 2 d 1 -3 d 2 2 d 1 X 1 5 d 2 -1 d 1 -4 d 1 -3 d 2 2 d 1 2 d 2 X 1 -3 d 1 4 d 2 -2 d 1 -3 d 1 6 d 2 -1 d 1 -3 d 1 X 2 1 d 1 -1 d 2 2 d 1 -1 d 1 -1 d 2 5 d 1 1 d 1 -4 d 2 -1 d 1 1 d 2 2 d 1 -1 d 1 -2 d 2 1 d 1 -2 d 1 X 2 1 d 1 2 d 1 -2 d 3 X 2 2
+ d 1 -1 d 1 X 2 -2 d 1 1 d 1 X 2 1 d 1 4 d 2 -4 d 1 -1 d 1 -3 d 2 5 d 1 -5 d 1 4 d 2 2 d 1 -2 d 3 X 1 -2 d 2 X 1 2 d 1 X 2 3 d 1 -2 d 1 -3 d 2 -1 d 1 2 d 2 7 d 1 -9 d 1 -1 d 2 4 d 1 1 d 1 2 d 2 4 d 1 -7 d 2 2 d 1 X 1 -5 d 2 7 d 1 -7 d 1 4 d 2 1 d 1
+ -2 d 1 1 d 2 X 1 -2 d 2 -1 d 1 2 d 1 -1 d 2 -1 d 1 -1 d 1 5 d 2 -3 d 1 5 d 2 -1 d 1 -3 d 1 -1 d 2 -3 d 1 2 d 1 1 d 2 -1 d 1 4 d 1 -4 d 2 -2 d 1 3 d 2 -1 d 1 5 d 1 -1 d 2 5 d 1 -5 d 1 -1 d 2 -5 d 1 11 d 2 -9 d 1 4 d 1 -3 d 2 X 1 2 d 1 -5 d 2 4 d 1 4
+ d 1 -7 d 2 -1 d 1 10 d 2 -9 d 1 1 d 1 2 d 2 5 d 1 -6 d 1 X 2 -1 d 1 1 d 2 -3 d 1 1 d 1 4 d 2 -4 d 1 3 d 1 -1 d 3 X 1 -3 d 2 4 d 1 -1 d 2 -1 d 1 2 d 1 -1 d 2 -2 d 1 2 d 1 -2 d 2 2 d 1 -2 d 2 X 1 8 d 1 -5 d 2 -2 d 1 2 d 1 1 d 2 -3 d 1 2 d 2 X 1 2 d 1
+ -4 d 2 X 1 3 d 1 -2 d 2 6 d 1 -4 d 1 -4 d 2 3 d 4 X 1 -3 d 2 2 d 1 -3 d 1 4 d 2 X 1 -1 d 2 -3 d 1 2 d 1 -2 d 2 2 d 2 X 2 1 d 1 -1 d 1 1 d 2 -1 d 1 -2 d 2 2 d 1 -2 d 1 2 d 2 -1 d 1 2 d 1 -2 d 2 3 d 1 -3 d 2 4 d 1 1 d 3 X 1 -5 d 1 -1 d s 1 1 1 c 406
+ 49 23 935 bf black
+ gsave  2268 989 0 0 C 66 944.062 t 0 r /Helvetica-Bold findfont 38.3976 sf 0 0 m (Run 382 Event 25) show NC gr 
+ gr  gr showpage
+end
+%%EOF
