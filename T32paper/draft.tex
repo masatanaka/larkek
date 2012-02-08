@@ -24,7 +24,9 @@
 %% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
 %%
 %%
-\documentclass[preprint,12pt]{elsarticle}
+%%\documentclass[preprint,12pt]{elsarticle}
+%%\documentclass[final,3p,times,twocolumn]{elsarticle}
+\documentclass[final,3p,times,twocolumn]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -105,7 +107,8 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
-\title{Particle ID performance of Liquid Argon TPC}
+\title{Performance of a 250L liquid Argon TPC
+for sub-Gev charged particle identification}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{<author name>}
@@ -119,13 +122,14 @@
 \begin{abstract}
 %% Text of abstract
 
+We have constructed a LArTPC detector with fiducial mass of ~150 kg
+as a part of the R\&D program of the next generation neutrino and nucleon
+decay detector.
+
 This paper describes a study of particle identification performance of
-liquid Argon TPC (LArTPC) detector using well-defined charged particles
+the detector using well-defined charged particles
 (pions, kaons, and protons) with momentum of ~800 MeV/$c$
 obtained at J-PARC K1.1Br beamline.
-
-We have build a LArTPC detector with fiducial mass of ~150 kg,
-and injected the beam particle
 
 \end{abstract}
 
@@ -148,35 +152,39 @@ and injected the beam particle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/Introduction}
+\input{tex/Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Data Quality}
+%\section{Detector Setup}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/DataQuality}
+\input{tex/Setup}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Software Framework}
+%\section{Data Sampple}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/SoftwareFramework}
+\input{tex/Data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Event Reconstruction}
+%\section{Simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/EventReconstruction}
+\input{tex/Simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Liquid Argon Purity}
+%\section{Pion Result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/LiquidArgonPurity}
+\input{tex/Pion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Event Simulation}
+%\section{Proton Result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/EventSimulation}
+\input{tex/Proton}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Data-MC Comparison}
+%\section{Kaon Result}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/Data-MCComparison}
+\input{tex/Kaon}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Recombination Factor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{tex/Recombination}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{tex/Summary}
+\input{tex/Summary}
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
@@ -242,6 +250,9 @@ Nucl.\ Instrum.\ Meth.\ A {\bf 518}, 45 (2004).
 
 \bibitem{purity}
   A.~Bettini {\it et al.}, Nucl.\ Instrum.\ Meth.\ A\ {\bf 305}, 177 (1991).
+
+\bibitem{Ref:FEMTET}
+http://www.muratasoftware.com/products/index.html
 
 \bibitem{3069654}
   P.V.C Hough 'Method and means for recognizing complex patterns',United States Patent Office 3069654(1962) 
