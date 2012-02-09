@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2011.3.24)  8 FEB 2012 22:53
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2011.3.24)  9 FEB 2012 19:54
 entering extended mode
  %&-line parsing enabled.
 **draft
@@ -557,81 +557,77 @@ Underfull \hbox (badness 2503) in paragraph at lines 5--6
 
 
 ]
-File: fig/Beamline.eps Graphic file (type eps)
- <fig/Beamline.eps>
+
+LaTeX Warning: Reference `fig:BeamCounters' on page 2 undefined on input line 5
+3.
+
 File: fig/TOF_cut.eps Graphic file (type eps)
- <fig/TOF_cut.eps>
+<fig/TOF_cut.eps>
 File: fig/FC_KPI.eps Graphic file (type eps)
  <fig/FC_KPI.eps>
-[2]
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
 File: fig/Momentum_proton.eps Graphic file (type eps)
- <fig/Momentum_proton.eps>
-File: ./fig/BeamProfile3.eps Graphic file (type eps)
- <./fig/BeamProfile3.eps>) (./tex/Data.tex
+
+<fig/Momentum_proton.eps>) (./tex/Data.tex
 Underfull \hbox (badness 1983) in paragraph at lines 5--16
 []\OT1/txr/m/n/10 Table 1[] shows list of the col-lected data while
  []
 
-
-Overfull \hbox (2.93005pt too wide) in paragraph at lines 20--33
+[2]
+Overfull \hbox (29.32005pt too wide) in paragraph at lines 20--33
  [] 
  []
 
-[3]
 File: fig/Textbook.eps Graphic file (type eps)
- <fig/Textbook.eps>
+<fig/Textbook.eps>
 File: fig/Kmunu.eps Graphic file (type eps)
- <fig/Kmunu.eps>
+ <fig/Kmunu.eps> [3]
 File: fig/beforeafterFFT.eps Graphic file (type eps)
  <fig/beforeafterFFT.eps>
 File: fig/FFT.eps Graphic file (type eps)
  <fig/FFT.eps>
 File: fig/clustering.eps Graphic file (type eps)
 
-<fig/clustering.eps>
-Underfull \vbox (badness 4518) has occurred while \output is active []
-
- [4]
+<fig/clustering.eps>) (./tex/Simulation.tex
 File: fig/PionQvsCh.eps Graphic file (type eps)
-
-<fig/PionQvsCh.eps>
+ <fig/PionQvsCh.eps> [4]
 File: fig/2DFieldMap.eps Graphic file (type eps)
- <fig/2DFieldMap.eps>
+
+<fig/2DFieldMap.eps>
 File: fig/cosmic68_ev258_display.eps Graphic file (type eps)
  <fig/cosmic68_ev258_display.eps>
 File: fig/cosmic68_ev258.eps Graphic file (type eps)
-
-<fig/cosmic68_ev258.eps>
+ <fig/cosmic68_ev258.eps>
 File: fig/tauHistory.eps Graphic file (type eps)
- <fig/tauHistory.eps>
+
+<fig/tauHistory.eps>
 File: fig/cross_talk_1.eps Graphic file (type eps)
- <fig/cross_talk_1.eps>)
-(./tex/Simulation.tex [5] [6]
+ <fig/cross_talk_1.eps> [5]
 File: fig/Simulation.eps Graphic file (type eps)
- <fig/Simulation.eps>) (./tex/Pion.tex
+ <fig/Simulation.eps>)
+(./tex/Pion.tex
 Underfull \hbox (badness 1527) in paragraph at lines 4--5
 []\OT1/txr/m/n/10 Explain Lan-dau dis-tri-bu-tion ("bare" track and
  []
 
 File: fig/PionLandau.eps Graphic file (type eps)
-<fig/PionLandau.eps>) (./tex/Proton.tex
+<fig/PionLandau.eps>) (./tex/Proton.tex [6]
 Underfull \hbox (badness 10000) in paragraph at lines 15--21
 
  []
 
 File: ./fig/stop_proton1.eps Graphic file (type eps)
 <./fig/stop_proton1.eps>
-File: fig/stop_proton3.eps Graphic file (type eps)
- <fig/stop_proton3.eps>) (./tex/Kaon.tex [7]
-Underfull \hbox (badness 1292) in paragraph at lines 11--12
-[]\OT1/txr/m/n/10 Transform hit co-or-di-nates [TPC chan-nel, drift
+Underfull \hbox (badness 1147) in paragraph at lines 29--35
+\OT1/txr/m/n/10 dis-tance from stopped point. Hit charge dis-tri-bu-
  []
 
-File: fig/cHit4_hough.eps Graphic file (type eps)
-<fig/cHit4_hough.eps>
-File: fig/RangeVsHitfabs_wcut_hough.eps Graphic file (type eps)
- <fig/RangeVsHitfabs_wcut_hough.eps>)
-(./tex/Recombination.tex [8]
+File: fig/stop_proton2.eps Graphic file (type eps)
+<fig/stop_proton2.eps>
+File: fig/stop_proton3.eps Graphic file (type eps)
+ <fig/stop_proton3.eps>) (./tex/Recombination.tex
+[7]
 Underfull \hbox (badness 1248) in paragraph at lines 15--21
 \OT1/txr/m/n/10 is de-ter-mined with truth in-for-ma-tion of sim-u-la-tion
  []
@@ -650,26 +646,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--21
 3(syst.)
  []
 
-File: ./fig/Q_02.eps Graphic file (type eps)
-<./fig/Q_02.eps>
-File: ./fig/dEdx2.eps Graphic file (type eps)
- <./fig/dEdx2.eps>
 File: ./fig/RFresult2.eps Graphic file (type eps)
- <./fig/RFresult2.eps>) (./tex/Summary.tex)
+<./fig/RFresult2.eps>) (./tex/Kaon.tex
+Underfull \hbox (badness 1292) in paragraph at lines 11--12
+[]\OT1/txr/m/n/10 Transform hit co-or-di-nates [TPC chan-nel, drift
+ []
+
+File: fig/cHit4_hough.eps Graphic file (type eps)
+<fig/cHit4_hough.eps>
+File: fig/RangeVsHit4_wcut_hough.eps Graphic file (type eps)
+ <fig/RangeVsHit4_wcut_hough.eps>
+File: fig/RangeVsHitfabs_wcut_hough.eps Graphic file (type eps)
+
+<fig/RangeVsHitfabs_wcut_hough.eps>) (./tex/Summary.tex [8])
 No file draft.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--250
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
 []\OT1/txr/m/n/8 S. Amoruso, M. An-tonello, P. Aprili, F. Ar-neodo,
  []
 
-[9] (./draft.aux) ) 
+[9] (./draft.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2283 strings out of 256217
- 27240 string characters out of 1917095
+ 2281 strings out of 256217
+ 27269 string characters out of 1917095
  79376 words of memory out of 1500000
  5491 multiletter control sequences out of 10000+200000
  22552 words of font info for 69 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 32i,8n,30p,361b,281s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 32i,8n,30p,325b,281s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on draft.dvi (9 pages, 36440 bytes).
+Output written on draft.dvi (9 pages, 37124 bytes).

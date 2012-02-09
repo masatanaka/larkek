@@ -1,6 +1,139 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Simulation Sample}
+\section{Detector Calibration}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Channel-by-Channel Calibration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Figure~\ref{fig:PionQvsCh} shows the hit charge as a function of 
+the TPC channel number obtained from the 800 MeV/$c$ $\pi^+$ data. 
+This figure is obtained from $\sim$300 events of well-selected Pion passing-through the TPC.
+Gray-scale contours show hit charge distributions for
+each channel and black points correspond to average of the hit charge distribution.  
+Although we expect the energy deposition of the through-going pion to be uniform,
+we observe relatively large channel dependence. 
+This is mainly because of the distortion of the TPC drift field.
+We use this average charge as channel-by-channel normalization scale.
+
+\begin{figure}[htbp]
+ \begin{center}
+%  \includegraphics[width=0.8\hsize]{fig/PionTrack.eps}
+  \includegraphics[width=1.0\hsize]{fig/PionQvsCh.eps}
+ \end{center}
+ \caption{800 MeV/c pion average hit charge}
+ \label{fig:PionQvsCh}
+\end{figure}
+
+Figure~\ref{Fig:2DFieldMap} shows electric field of the TPC in V/cm which 
+is calculated using a 2D FEM (Finite Element Method) package \cite{Ref:FEMTET},
+where horizontal axis, vertical axis, and color strength 
+correspond to the beam line direction, the drift direction, the electric field in V/cm, respectively.
+Cathode, Anode, and Anode grid are located at of z=-200 mm, z=200 mm, and z=210 mm. respectively.
+There are significant distortion of the electric field around 4 corners of the TPC fiducial volume,
+and also around x=$\pm$120 mm where support structure of the Cathode and Anode grids exists.
+We found this field distortion is the main cause of the
+non-uniformity of the TPC response.
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=1.0\hsize]{fig/2DFieldMap.eps}
+ \end{center}
+ \caption{Electric field map obtained with 2D FEM where
+horizontal axis corresponds to the beam line direction,
+and vertical axis corresponds to drift direction,
+and color strength corresponds to electric field strength in V/cm.
+}
+ \label{Fig:2DFieldMap}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Liquid Argon Purity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Attenuation of the drift electron depends on purity of LAr since electronegative impurities capture it \cite{purity}. 
+Thus we need to apply correction to TPC signal charge according to the drift time.
+We use cosmic ray events triggered by inner PMT at off-beam timing for measuring the LAr purity, and use this to correct the beam data.
+Figure~\ref{fig:CosmicEvent} shows an event display of typical cosmic muon event crossing TPC channels.
+The attenuation of readout charge depending on drift time is clearly seen in the right plot. 
+We use multiple events to cancel Landau effect and apply channel response correction to estimate LAr purity.
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=0.49\hsize]{fig/cosmic68_ev258_display.eps}
+  \includegraphics[width=0.49\hsize]{fig/cosmic68_ev258.eps}
+ \end{center}
+ \caption{Left: Typical cosmic muon event crossing TPC channels. Right: Charge deposit as a function of drift time.}
+ \label{fig:CosmicEvent}
+\end{figure}
+
+We select cosmic ray event with more than 20 TPC channels which corresponds to zenith angle of more than $27^\circ$ and consistent with straight line by $\chi^2$ fit. 
+%Readout charge is corrected for field distortion and projected to beam direction to correct injection angle.
+We fit readout charge by Landau function in each drift time bin to estimate average charge deposit. 
+%Figure~\ref{fig:tauExample} shows example of the average readout charge as a function of drift time which is fitted by exponential to obtain drift electron lifetime. 
+%Realistic Monte Carlo simulation shows about 13\% (TBU) smaller lifetime estimation due to noise, field distortion, and FFT effects. 
+%We correct output lifetime from these effects.
+Figure~\ref{fig:CosmicPurity} shows an drift electron lifetime as a function of duration after initial LAr filling.
+Drift electron lifetime was 600 $\mu$s at 60 hours, and 400 $\mu$s after 150 hours.
+%Initial purity looks good, but the purity was slowly degrading while data taking period.
+The degradation is possibly due to impurity from micro leak or out-gassing penetrating faster than purification by gas recirculation.
+But we kept enough drift electron lifetime during data taking period.
+The effects from noise, field distortion, and FFT give about 10\% (to be confirmed) of systematic uncertainty in LAr purity estimation.
+%Since charge in simulation is calibrated using through-going $\pi$ data as described later and duration of analyzed beam data is short (about 30 hours), this uncertainty gives negligible effects (to be updated, show percentage) in beam data analysis. 
+
+%\begin{figure}[htbp]
+% \begin{center}
+%  \includegraphics[width=0.45\hsize]{fig/chargeDep.eps}
+%  \includegraphics[width=0.45\hsize]{fig/tauExample.eps}
+% \end{center}
+% \caption{Left: Readout charge as a function of drift time. Readout charge in each drift time bin is fitted by landau function. Right: Average charge readout as a function of drift time which is fitted by exponential to estimate drift electron lifetime.}
+% \label{fig:tauExample}
+%\end{figure}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=1.0\hsize]{fig/tauHistory.eps}
+ \end{center}
+ \caption{Drift electron lifetime as a function of duration after initial LAr filling. The lifetime is used to correct the beam data.}
+ \label{fig:CosmicPurity}
+\end{figure}
+
+\subsection{Cross Talk}
+
+TBD
+
+%Figure\ref{fig:cross_talk1} shows the signal wave form of stopped channel and the front channel of typical proton event.
+%The signal wave form of stopped channel is differential form of the that of the front channel.
+%Such signals are appeared at channel number 1 which cannot enter drifted ionization electron in electric power lines.
+%One possibility which cause such a phenomenon is following process.
+%The distance between anode channels is very short,
+%so the influence of mutual capacitance become large
+%and this capacitive coupling induce cross talk noise.
+%This effect notably appears the channel where the difference of the charge between adjacent channels is large,
+%such as the channel around stopped point of proton.
+%Then, we implement this phenomenon in Monte Carlo Simulation
+%by adding bipolar shape of the signal Gavin shape at adjacent channels.
+%The area of the mountain of bipolar shape is 10.5\% of the area of signal Gaussian at each adjacent channel.
+%The value of 10.5\% is determined by comparing the hit charge distribution at stopped channel between data and MC simulation.
+%Figure\ref{fig:cross_talk2} shows hit charge distribution of stopped channel.
+%Black is data and blue is MC simulation with cross talk red is MC simulation without cross talk.
+%As fig\ref{fig:cross_talk2} shown, data and MC simulation with cross talk is good agreement,
+%so the value of 10.5\% is reasonable.
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=1.0\hsize,clip]{fig/cross_talk_1.eps}
+%    \includegraphics[width=0.45\hsize,clip]{fig/cross_talk_2.eps}
+  \end{center}
+  \caption{Left plot shows signal wave form of stopped channel and the front channel, 
+    and right plot shows hit charge distribution of stopped channel}
+  \label{fig:cross_talk1}
+  \label{fig:cross_talk2}
+\end{figure}
+
+
+\section{Simulation Tuning}
+
 Development of the realistic simulation is one of the main task of this experiment.
 We try to put all the effects (Field distortion, LAr purity, cross talk, etc) into this simulation,
 and see if the properties of LArTPC in data can be reproduced using the simulated sample.
