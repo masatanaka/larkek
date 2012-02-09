@@ -20,21 +20,22 @@ and in this paper we only discuss the issues which are relevant.
 
 \subsection{Beamline Equipment}
 
-We have several beam counters to identify beam particles (see Fig\ref{fig:Beamline}).
+We have several beam counters to identify beam particles.
+% (see Fig\ref{fig:Beamline}).
 There are two beam defining counters (BDC and T32 BDC) which determine acceptance of the beam, 
 a Fitch-type Cherenkov counter (FC), 
 and a Gas Cherenkov counter (GC), 
 and two time of flight counters (TOF1 and TOF2).
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=1.0\hsize,clip]{fig/Beamline.eps}
-  \caption{Instruments on K1.1BR Beam Line}
-  \label{fig:Beamline}
-\end{figure}
+%\begin{figure}[htbp]
+%  \centering
+%  \includegraphics[width=1.0\hsize,clip]{fig/Beamline.eps}
+%  \caption{Instruments on K1.1BR Beam Line}
+%  \label{fig:Beamline}
+%\end{figure}
 
 Two TOF counters are 3.5m apart, and has $\sim$200 ps of time resolution.
-Top plot in Fig.\ref{fig:BeamCounters} shows the flight time distribution between TOF1 and TOF2
+Figure \ref{fig:BeamCountersTOF} shows the flight time distribution between TOF1 and TOF2
 obtained from 800 MeV/$c$ beam particles which contain all $K^{+}$, $\pi{+}$, $e^{+}$, and $p$. 
 Three peaks which correspond to $\pi$+$e^+$, $K^+$, and $p$, respectively, are well separated.
 
@@ -42,7 +43,7 @@ FC has 5 cm of acrylic plate as Cherenkov light radiator and
 photo-multipliers which are aligned in circles with two different emission angles
 ($K$-ring and $\pi$-ring) as photo detector.
 It is designed to have maximum separation of $K^{+}$ and $\pi^{+}$ with momentum of 800 MeV/$c$.
-Top plot in Fig.\ref{fig:BeamCounters} shows response of FC for the 800 MeV/$c$ beam particles. 
+Top plot in Fig.\ref{fig:BeamCountersFC} shows response of FC for the 800 MeV/$c$ beam particles. 
 Horizontal axis and vertical axis are hit multiplicity of the $\pi$-ring and $K$-ring, respectively. 
 $K^+$($\pi$) is identified as event with signal in $K$-ring ($\pi$-ring) but no signal in $\pi$-ring ($K$-ring).
 In case of no signals in both rings, the particle is considered as proton.
@@ -57,10 +58,17 @@ almost 100\% purity $K^+$ sample.
 \begin{figure}[htbp]
   \begin{center}
     \includegraphics[width=1.0\hsize,clip]{fig/TOF_cut.eps}
+  \end{center}
+ \caption{TOF distribution.}
+ \label{fig:BeamCountersTOF}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{center}
     \includegraphics[width=1.0\hsize,clip]{fig/FC_KPI.eps}
   \end{center}
- \caption{Beam counter information}
- \label{fig:BeamCounters}
+ \caption{FC}
+ \label{fig:BeamCountersFC}
 \end{figure}
 
 \subsection{Oct/2010 Beam Test Configuration}
@@ -75,8 +83,10 @@ by using the beam counters, we define three types of trigger
 Beam Momentum
 \begin{itemize}
 \item Materials located from proton target to LArTPC detector (beam counters, beam windows, air, etc) degrade beam particle momentum
-\item the effect is estimated by looking at TOF of proton item
-\item average beam momentum is 730 MeV/$c$
+\item the effect is estimated by looking at TOF of proton, average prton beam momentum is 730 MeV/$c$
+\item For other particles  (K, pi,e e), TOF does not have enough resolution to determin momentum, and the degradation
+is directly estimated by counting the energy deposition to the materials using GEANT based simulation.
+For example Kaon momentum is xxx MeV/c on average.
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -89,16 +99,16 @@ Beam Momentum
 \end{figure} 
 
 We measured beam profile in front of 250LAr TPC beam window by using plastic scintillation counters.
-Figure \ref{beamprofile_250L} shows the result.
+%Figure \ref{beamprofile_250L} shows the result.
 The beam is relatively narrow in vertical direction (within 5 cm),
 but spread in horizontal direction ($\sim$ 10 cm).
 
-\begin{figure}[!htb]
-  \begin{center}
-     \includegraphics[width=0.8\hsize,clip]{./fig/BeamProfile3.eps}
-  \end{center}
-  \caption{Beam profile on the front of 250LAr TPC}
-  \label{beamprofile_250L}
-\end{figure}
+%\begin{figure}[!htb]
+%  \begin{center}
+%     \includegraphics[width=0.8\hsize,clip]{./fig/BeamProfile3.eps}
+%  \end{center}
+%  \caption{Beam profile on the front of 250LAr TPC}
+%  \label{beamprofile_250L}
+%\end{figure}
 
 
