@@ -25,26 +25,38 @@ We use this average charge as channel-by-channel normalization scale.
  \label{fig:PionQvsCh}
 \end{figure}
 
-Figure~\ref{Fig:2DFieldMap} shows electric field of the TPC in V/cm which 
-is calculated using a 2D FEM (Finite Element Method) package \cite{Ref:FEMTET},
-where horizontal axis, vertical axis, and color strength 
-correspond to the beam line direction, the drift direction, the electric field in V/cm, respectively.
-Cathode, Anode, and Anode grid are located at of z=-200 mm, z=200 mm, and z=210 mm. respectively.
-There are significant distortion of the electric field around 4 corners of the TPC fiducial volume,
-and also around x=$\pm$120 mm where support structure of the Cathode and Anode grids exists.
+Figure~\ref{Fig:FieldLine} shows line of force around anode  calculated using 
+a 2D FEM (Finite Element Method) package \cite{Ref:FEMTET},
+where horizontal axis and vertical axis correspond to the beam line direction and 
+the drift direction, respectively.
+Anode and grid are located at TPC height =20 cm and 21 cm, respectively.
+Top plot shows the field around corner of the TPC
+and bottom plot is around suport frame of the grid plane.
+There are significant distortion of the electric field.
 We found this field distortion is the main cause of the
 non-uniformity of the TPC response.
 
+%\begin{figure}[htbp]
+% \begin{center}
+%  \includegraphics[width=1.0\hsize]{fig/2DFieldMap.eps}
+% \end{center}
+% \caption{Electric field map obtained with 2D FEM where
+%horizontal axis corresponds to the beam line direction,
+%and vertical axis corresponds to drift direction,
+%and color strength corresponds to electric field strength in V/cm.
+%}
+% \label{Fig:2DFieldMap}
+%\end{figure}
+
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=1.0\hsize]{fig/2DFieldMap.eps}
+  \includegraphics[width=1.0\hsize]{fig/FieldLine.eps}
  \end{center}
- \caption{Electric field map obtained with 2D FEM where
-horizontal axis corresponds to the beam line direction,
-and vertical axis corresponds to drift direction,
-and color strength corresponds to electric field strength in V/cm.
+ \caption{Line of force of the electric field obtained with 
+2D FEM where horizontal axis corresponds to the beam line direction,
+and vertical axis corresponds to drift direction.
 }
- \label{Fig:2DFieldMap}
+ \label{Fig:FieldLine}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,9 +110,25 @@ The effects from noise, field distortion, and FFT give about 10\% (to be confirm
  \label{fig:CosmicPurity}
 \end{figure}
 
-\subsection{Cross Talk}
+\subsection{Signal induction}
 
-TBD
+For the proper reconstruction and simulation of the signals, the
+electronics readout as well as the signal induction on the anode
+strips have
+to be taken into account. As described above (reference to electronics
+section) the shapers of the used charge sensitive preamplifiers have
+integration and differentiation time constants of 0.6~$\mu$s and
+2.7~$\mu$s, respectively. On the other hand, the signals on the
+different strips of the anode are induced by moving electrons,
+drifting between the anode-grid and the anode with a drift field of
+1~kV/cm. Since this transfer time of about 5~$\mu$s is larger than the
+response of the electronics readout, two effects have to be taken into
+account: the induced unipolar signal of a strip which collects a
+drifting electron becomes broader, compared to the fast electronics
+response, whereas on the two neighboring strips, bipolar signals are
+induced. Both effects were observed and verified with the weighting
+field method, introduced by Shockley \cite{ref:induction}.
+
 
 %Figure\ref{fig:cross_talk1} shows the signal wave form of stopped channel and the front channel of typical proton event.
 %The signal wave form of stopped channel is differential form of the that of the front channel.
@@ -132,35 +160,39 @@ TBD
 \end{figure}
 
 
-\section{Simulation Tuning}
+\section{LArTPC Simulation}
 
 Development of the realistic simulation is one of the main task of this experiment.
-We try to put all the effects (Field distortion, LAr purity, cross talk, etc) into this simulation,
+We try to put several effects (Field distortion, LAr purity, cross talk, etc) into this simulation,
 and see if the properties of LArTPC in data can be reproduced using the simulated sample.
 
 \label{Sec:Simulation}
 \subsection{Signal Simulation}
-We use GEANT3 for simulating energy deposition of initial beam particles and
-secondary particles to the TPC detector and beam line counters. 
-Maximum step of GEANT is set to 0.5 mm which is enough smaller than the TPC readout pitch of 1 cm.
-We set energy cut-off for soft electron/photon emission to 10 keV which is minimum possible energy can be set in GEANT3.
-Recombination of electron and Argon ion depends on the electric field $E$ and $dE/dx$, and explained by the following equation (Birks law)
+GEANT3 is employed for simulating energy deposition of 
+initial beam particles and secondary particles to the TPC detector and beam line counters. 
+Maximum step of GEANT is set to 0.5 mm which is enough smaller compare to the TPC readout pitch of 1 cm.
+Energy cut-off for soft electron/photon emission, which is an important property to understand the
+performance of LArTPC, is set to 10 keV. It is minimum possible energy can be set in GEANT3.
+After the energy deposition, Recombination of electron and Argon ion is simulated based on the equation (Birks law),
 \begin{equation}
   Q = A\frac{Q_{0}}{1+(k/E)\times(dE/dx)\times(1/\rho)}
 \label{eq:birkslaw}
 \end{equation}
-where $Q_{0}$ is initial ionization charge, $\rho$ is density of liquid Argon (=1.4 g/cm$^3$).
-For $A$ and $k$, we use the measurement by ICARUS collaboration \cite{658352}.
-Electric field is given by Fig.\ref{Fig:2DFieldMap}.
+where $Q_{0}$ is initial ionization charge, $\rho$ is density of liquid Argon (=1.4 g/cm$^3$),
+$E$ is electric field (V/cm) electric field , and $dE/dx$ is stopping power (Mev/g/cm$^2$).
+Parameters of $A$ and $k$ are measured by ICARUS collaboration \cite{658352}.
+Electric field is given by 2DFEM calicuration (Fig.\ref{Fig:FieldLine}).
 
 After the recombination, drift of the ionization electrons to anode is simulated
 using a simple step simulation with step size of 0.1 mm.
 Drift velocity of the ionization electron depends on the liquid Argon temperature,
 and the electric field. We use a measurement by ICARUS collaboration \cite{649233}, and
-electric field in Fig.\ref{Fig:2DFieldMap}. 
-Typical drift velocity with 200 V/cm of the drift field and temperature of 92K is 0.8 m/ms.
+electric field in Fig.\ref{Fig:FieldLine}. Typical drift velocity with 200 V/cm of 
+the drift field and temperature of 92K is 0.8 m/ms.
 Diffusion of the drift electron is considered and we assume coefficient for the transverse diffusion 
 and and lateral diffusion are 9.0 mm$^2$/m and 2.3 mm$^2$/m, respectively (need reference).
+\\
+**** explanation of diffusion will be skipped **
 
 \begin{itemize}
 \item Simulate Signal waveform: Gaussian
@@ -270,6 +302,21 @@ Figure~\ref{Fig:SimulatedKaon} shows simulated event of 630 MeV/$c$ $K^+\to\mu\n
  \end{center}
  \caption{Event display of simulated events for 630 MeV/$c$ $K^+$.}
  \label{Fig:SimulatedKaon}
+\end{figure}
+
+\begin{itemize}
+\item Explain Landau distribution ("bare" track and "dressed" track)
+\item pion track (800 MeV/c) and soft electron ($\sim$10 keV) has different $dE/dx$ = recombination
+\item Set delta-ray cut off = 10 keV in simulation, and take ICARUS measurement of recombination.
+\item Hit charge distribution is in good agreement between data and MC.
+\end{itemize}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=0.8\hsize]{fig/PionLandau.eps}
+ \end{center}
+ \caption{Hit charge distribution for 800 MeV/c through-going $\pi^+$ sample. Points and histograms correspond to data and MC, respectively}
+ \label{Fig:PionLandau}
 \end{figure}
 
 

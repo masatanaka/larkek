@@ -1,17 +1,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item Advantage of LArTPC: total-absorption, fine-grain, ...
-\item We are interested in application of next generation neutrino and nucleon decay (100 kt LArTPC)
-\item $p\to K^+\nu$: LArTPC is expected to have much better physics sensitivity than WC (~300 MeV/c Kaon ID can not seen in WC)
-\item P32 and GLACIER program.
-\item Two types of R\&D: (1) Make bigger detector,  (2) Understand property of LArTPC for more reliable physics sensitivity estimation
-\item Study using not cosmic,  not neutrino beam, but charged particle (Kaon, pion, proton) from beam is important
-\item We have constructed 250L LArTPC
-\item Oct/2010 beam test at J-PARC K1.1Br beamline: Collected Kaon, pion, proton, and electron data
-\item Establish reconstruction, for pion, proton, and Kaon
-\item Develop realistic simulation
-\item By Comparing data and MC in detail, we can understand basic property of the LArTPC detector
-\item Section 2 describes experimental setup, Section 3 describes collected data sample, Section 4 Simulated event, Section 5 pion, Section 6 proton,   , Section 5 Kaon  
-\end{itemize}
+Liquid argon TPC detectors, first studied by the ICARUS collaboration (see Ref.~\cite{Amerio:2004ze} and references therein), are continuously sensitive detectors with calorimetric and tracking capabilities. With a readout granularity that can be as low as a few mm, they allow a fine sampling down to a few percent of a radiation length, thus optimally suited for the identification of $\nu_e$ induced charged current interactions. 
+
+Large LAr TPCs, up to 100 kton size, have been proposed~\cite{Rubbia:2004tz,Badertscher:2008bp,Agarwalla:2011hh,Akiri:2011dv} as far dectors in long baseline neutrino oscillation experiments for the determination of the $\theta_{13}$ mixing angle, of the neutrino mass hierarchy and ultimately for the search of CP violation in the leptonic sector.
+
+Such detectors, if installed underground even at moderate depths, could effectively contribute to the search for proton decay~\cite{Bueno:2007um} and act as observatories for astrophysical neutrinos~\cite{GilBotella:2004bv,Rubbia:1999py,Conrad:2010mh}. 
+
+LAr TPCs can extend the search for nucleon decay modes via modes favored by supersymmetric grand unified model up to proton lifetimes of $\sim 10^{35}$ years~\cite{Bueno:2007um}, having from 5 to 10 times the efficiency of water Cerenkov detectors for such decays. In the two body decay $p \longrightarrow K{^+} \bar{\nu}$, the charged kaon would be emitted with a momentum of 340 MeV/c in case of a proton at rest, and then smeared by the nucleon Fermi
+motion. Such kaons are not directely visible in water Cherenkov detectors due to the high momentum threshold ($\sim 600$ MeV/c) of kaons for Cherenkov radiation in water, but they are identifiable in a LAr detector by measuring the local energy loss along the tracks as a function of the residual range, and by their decay topology.
+
+The construction of a tens of kton LAr TPC requires the solution of several technological problems (cryostat, LAr purification, long drifts, ionization charge readout,...) and, given the size and cost of the project, also a solid evaluation of the physics reach. In addition to the necessary R\&D to extrapolate from the hundred tons scale ICARUS detector to a device 10 to 100 times larger, there are still some aspects of the behavior of particles in a LAr TPC that need to be experimentally assessed in a quantitative way in order to provide ultimate physics sensitivity estimations. We mention here energy resolutions for electromagnetic and hadronic showers, charged particle identification and electron/$\pi^0$ separation capabilities. We believe that this kind of studies is better accomplished by exposing a LAr TPC detector to charged particle beams of known composition and momentum.
+
+The actual performance of a LAr TPC will depend on several detector parameters, including the chosen charge readout method and the associated electronics, the readout pitch, and the resulting signal-over-noise ratio. Since several years we are working for the realization of a 100 kton-scale detector following the GLACIER concept~\cite{Rubbia:2009md}, a scalable concept for a single volume LAr TPC, operated in double phase with charge extraction and amplification in the pure argon vapor phase. 
+
+At the end of 2009 we submitted a proposal~\cite{P32:2009} to the J-PARC Laboratory, focusing on the opportunities offered by a GLACIER-like detector for the exploration of CP violation in the leptonic sector~\cite{Badertscher:2008bp}, on the necessary R\&D and on experimental studies with prototypes exposed to charged particle beams at J-PARC. The K1.1BR beamline of the J-PARC slow extraction facility, operated in a momentum range of 200--800 MeV/c and equipped with an electro-static
+separator to enrich its kaon content, offers an unique opportunity for the quantitative study of particle identification in a same momentum range as kaons from proton decay.
+
+For the first test campaign in October 2010, a 250L prototype LAr TPC, with a single readout view and operated in liquid argon phase, was exposed to the J-PARC K1.1BR beam, collecting large statistic samples of tagged kaons, pions, protons and electrons~\cite{Araoka:2011pw}.
+
+In this paper we report results from this first test exposure. A realisic simulation of the beamline and of the LAr TPC has been setup, including all detector effects like noise, drift field distortions, and LAr purity. Automated reconstruction algorithms have been developed for the reconstruction of through-going tracks, stopping tracks and particle decays. Integral collected charge distributions and differential distributions as a function of residual range are shown for all particle types. 
+
+A detailed comparison of data with simulation allows to derive the ionization charge recombination effect in LAr as a function of the stopping power. Particle identification capabilities at low momenta are also shown. 
+
+The experimental setup, including the beamline configuration and performance, is described in Section 2. The collected data sample, basic reconstruction algorithms and detector calibration are addressed in Sections 3 and 4. Section 5 describes in detail the tuning of the simulation for a realistic reproduction of the data. Data samples and comparisons with simulation for through-going pions, stopping protons and decaying kaons are shown in Sections 6, 7 and 8, respectively. Our conclusions are presented in Section 9.
+
